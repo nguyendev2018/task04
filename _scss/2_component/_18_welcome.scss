@@ -1,0 +1,93 @@
+.c-welcome {
+    margin-top: 108px;
+
+    .l-container {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .c-welcome__titlesub {
+        font-size: 3.4rem;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 2px;
+    }
+
+    .c-welcome__titlesub span {
+        color: $blue;
+    }
+
+    .c-welcome__titlemain {
+        font-size: 4.8rem;
+        line-height: 1.2;
+        letter-spacing: 4.6px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        margin-top: 33px;
+        transform: translateX(22px);
+    }
+    //ANCHOR layout
+    .c-welcome__list {
+        margin-top: 83px;
+    }
+
+    .c-welcome__item {
+        display: flex;
+    }
+
+    .c-welcome__itemone {
+        .c-welcome__itemlayer {
+            margin-left: 78px;
+        }
+    }
+
+    .c-welcome__itemtext {
+        padding-left: 24px;
+        margin-top: -31px;
+    }
+
+    .c-welcome__itemicon {
+        width: 89px;
+    }
+
+    .c-welcome__itembox {
+        margin-left: 82px;
+        margin-top: 19px;
+    }
+
+    .c-welcome__itemtitle {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        position: relative;
+        display: inline;
+        letter-spacing: -0.1px;
+
+        &::before {
+            content: url(../assets/img/welcome/icontext.svg);
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .c-welcome__itemtitle--blue {
+        color: $blue;
+        font-size: 3.6rem;
+    }
+
+    .c-welcome__itemdesc {
+        font-size: 2.1rem;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
+
+    .c-welcome__itemlayer {
+    }
+
+    .c-welcome__itemimg {
+    }
+}

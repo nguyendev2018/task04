@@ -1,0 +1,48 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about.html"
+      },
+      {
+        "title": "Nested 1",
+        "url": "/nested/",
+        "links": [
+          {
+            "title": "Nested 2",
+            "url": "/nested/nested/"
+          }
+        ]
+      }
+    ]
+  },
+  "cases" : {
+    "case" : [
+      {
+        "number" : "01",
+        "text" : "子育てにはどんな家が良いんだろう？",
+        "type" : "case",
+        "classdata" : "c-worries__itemone"
+      },
+      {
+        "number" : "02",
+        "text" : "理想の家って実現できるの？",
+        "type" : "case",
+        "label" : "いろいろとこだわった",
+        "classdata" : "c-worries__itemtwo"
+      },
+      {
+        "number" : "03",
+        "text" : "暮らしのスタイルがイメージできない",
+        "type" : "case",
+        "label" : "家は建てたいけど",
+        "classdata" : "c-worries__itemthree"
+      }
+    ]
+  }
+}

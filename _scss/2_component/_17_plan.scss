@@ -1,0 +1,91 @@
+.c-plan {
+    .l-container {
+        max-width: 1256px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .c-plan__heading {
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: #000;
+        position: relative;
+        padding-bottom: 12px;
+        font-family: "Oswald", sans-serif;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: #231815;
+            bottom: 0;
+            left: calc(50% - 30px);
+        }
+    }
+
+    .c-plan__list {
+        display: flex;
+    }
+
+    .c-plan__item {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .c-plan__itemleft {
+        width: 53%;
+    }
+
+    .c-plan__itemright {
+        width: 47%;
+        padding-left: 4%;
+    }
+
+    .c-plan__menulist {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .c-plan__menuitem {
+        margin-left: 40px;
+    }
+
+    .c-plan__menuitem span {
+        font-size: 2.2rem;
+        font-weight: 300;
+        font-feature-settings: "palt";
+    }
+
+    .c-plan__itemtext {
+        margin-right: 20px;
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .c-plan__table {
+        width: 100%;
+    }
+
+    .c-plan__tableitem {
+        width: 100%;
+        border-bottom: 1px solid #cbcbcb;
+        min-height: 81px;
+        font-weight: 300;
+        font-feature-settings: "palt";
+        font-feature-settings: "palt";
+        padding-top: 29px;
+        display: flex;
+    }
+
+    .c-plan__itemtext {
+        font-size: 2.5rem;
+        display: inline-block;
+        line-height: 1.8;
+    }
+}

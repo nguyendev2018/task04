@@ -1,0 +1,48 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
+  <section class="c-worries">
+
+    <div class="l-container">
+      <div class="c-worries__bg">
+        <h2 class="c-worries__heading">
+          家づくりの、こんな不安やお悩みないですか？
+        </h2>
+        <div class="c-worries__list">
+          <% if(typeof cases !="undefined" ) { %>
+            <% cases.case && cases.case.forEach(item=> { %>
+              <div class="c-worries__item <%= item.classdata %>">
+                <div class="c-worries__itemtop">
+                  <div class="c-worries__itemnumber">
+                    <%= item.number %>
+                  </div>
+                  <span class="c-worries__itemcase">
+                    <%= item.type %>
+                  </span>
+                </div>
+
+                <div class="c-worries__main">
+                  <span class="c-worries__mainlabel">
+                    いろいろとこだわった
+                  </span>
+                  <h3 class="c-worries__boxtitle">
+                    <%= item.text%>
+                  </h3>
+                </div>
+              </div>
+              <% }) %>
+                <% } %>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- @script -->
+  <script>
+    console.log("home page");
+  </script>
+  <!-- @@script -->

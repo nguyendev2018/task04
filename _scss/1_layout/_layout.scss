@@ -1,0 +1,43 @@
+/* layout
+------------------------------------------------------------*/
+
+//-------------------------------------------------------
+
+//-------------------------------------------------------
+//ANCHOR html, body
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    //TODO fz14 +lh21
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $black23;
+    line-height: 1.5;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+
+    &.u-overflow {
+        overflow: hidden;
+    }
+}
+
+.l-container--w1740 {
+    margin: 0 auto;
+    max-width: $container--w1740;
+    padding-left: 79px;
+    padding-right: 79px;
+}
+
+.l-container--w1200 {
+    margin: 0 auto;
+    max-width: $container--w1200 + 56px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+

@@ -1,0 +1,22 @@
+//ANCHOR container
+$container--w1200: 1200px;
+$container--w1562: 1562px;
+$container--w1740: 1740px;
+$main-fonts: "Noto Sans JP", sans-serif;
+@font-face {
+    font-family: Roboto-300;
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Roboto-bold;
+    src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+//color common
+$brown: #231815;
+$earth: #565f64;
+$black: #000;
+$black23: #231815;
+$white: #fff;
+$gray-light: #ededed;
+$blue: #252a6d;

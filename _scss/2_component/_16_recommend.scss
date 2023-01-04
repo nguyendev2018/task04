@@ -1,0 +1,66 @@
+.c-recommend {
+    background: #ededed;
+
+    .l-container--w1740 {
+        padding-left: 79px;
+        padding-right: 79px;
+        @include sp {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .c-recommend__list {
+        display: flex;
+        flex-wrap: wrap;
+        --mr: -25px;
+        margin-right: var(--mr);
+    }
+
+    .c-recommend__item {
+        --width: 25%;
+        --mr: 25px;
+        background: $white;
+        padding: 22px 20px 45px;
+        width: calc(var(--width) - var(--mr));
+        margin-right: var(--mr);
+        @include sp {
+            flex: auto;
+            --width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .c-recommend__itembox {
+        width: 100%;
+        padding-bottom: 76.7%;
+        position: relative;
+    }
+
+    .c-recommend__itemimg {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .c-recommend__itemtitle {
+        font-size: 2.3rem;
+        font-weight: normal;
+        margin-top: 17px;
+        margin-bottom: 5px;
+
+        span {
+            letter-spacing: 0.5em;
+        }
+    }
+
+    .c-recommend__itemdesc {
+        font-size: 1.9rem;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        line-height: 1.45;
+        line-break: anywhere;
+    }
+}

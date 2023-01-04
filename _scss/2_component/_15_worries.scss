@@ -1,0 +1,138 @@
+.c-worries {
+    margin-top: 82px;
+
+    .l-container {
+        margin: 0 auto;
+        max-width: $container--w1562 + 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .c-worries__heading {
+        letter-spacing: 0.01em;
+        color: $black;
+        font-size: 3.6rem;
+        line-height: 1.2;
+        font-weight: 400;
+        text-align: center;
+        transform: translateX(21px);
+    }
+
+    .c-worries__boxtitle {
+        letter-spacing: 0;
+        display: inline;
+        position: relative;
+        top: -1px;
+        left: -2px;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        color: $white;
+        font-feature-settings: "palt";
+    }
+
+    .c-worries__bg {
+        background-image: url("/assets/img/worries/worries-bg.png");
+        background-size: 385px auto;
+        background-position-y: 330px;
+        background-position-x: 168px;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .c-worries__list {
+        display: flex;
+        margin-top: 32px;
+        padding-left: 32px;
+    }
+
+    .c-worries__item {
+        --width: 33.33%;
+        --mr: 3.6%;
+        width: var(--width);
+        margin-right: var(--mr);
+
+        &:last-child {
+            --mr: 0;
+        }
+        @include tab {
+        }
+    }
+
+    .c-worries__itemtwo {
+        position: relative;
+        left: 3px;
+    }
+
+    .c-worries__itemtop {
+        position: relative;
+        margin-left: 4%;
+    }
+
+    .c-worries__itemthree {
+        position: relative;
+        left: 8px;
+    }
+
+    .c-worries__itemnumber {
+        font-size: 21.4rem;
+        font-family: Roboto-bold;
+        color: $gray-light;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+
+    .c-worries__itemcase {
+        font-family: Roboto-bold;
+        font-size: 2.4rem;
+        color: #c7c7c7;
+        position: absolute;
+        bottom: 56px;
+        left: 87px;
+        letter-spacing: 6.3px;
+    }
+
+    .c-worries__main {
+        background: $black;
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 26px;
+        position: relative;
+        bottom: 30px;
+
+        &::before {
+            content: url("/assets/img/worries/arrow.png");
+            position: absolute;
+            width: 24px;
+            height: 29px;
+            background-size: 100% 100%;
+            bottom: calc(100% - 2px);
+            left: 136px;
+        }
+    }
+
+    .c-worries__maintitle {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        font-feature-settings: "palt";
+        color: $white;
+    }
+
+    .c-worries__mainlabel {
+        position: absolute;
+        top: -15px;
+        right: -11px;
+        background: #7a89a8;
+        font-family: "Noto Serif JP", serif;
+        font-size: 1.8rem;
+        border-radius: 1.7rem;
+        letter-spacing: -1px;
+        padding: 8.5px 21px;
+        line-height: 1;
+        color: white;
+        font-feature-settings: "palt";
+    }
+}
