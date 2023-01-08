@@ -1,12 +1,103 @@
+.c-gern {
+    overflow: hidden;
+}
+
 .c-recommend {
     background: #ededed;
+    position: relative;
+    max-width: 1740px;
+    margin: 0 auto;
+    margin-top: 166px;
+    @include sp {
+        margin-top: 73px;
+    }
+
+    .c-recommend__main {
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-84px);
+        margin-right: 2.6%;
+        @include under-1200 {
+            justify-content: flex-end;
+        }
+        @include tab {
+            transform: translateY(-50px);
+        }
+        @include sp {
+            margin-right: 3.8%;
+            transform: translateY(-34px);
+        }
+    }
+
+    .c-recommend__layercar {
+        position: relative;
+        width: 28%;
+        left: 11.1%;
+        margin-top: -82px;
+        @include under-1200 {
+            display: none;
+        }
+    }
+
+    .c-recommend__title {
+        font-family: $Osawal-fonts;
+        font-weight: 300;
+        font-size: 8.2rem;
+        text-transform: uppercase;
+        letter-spacing: 8.8px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        margin-top: 14px;
+        @include tab {
+            font-size: 3.1rem;
+        }
+        @include sp {
+            letter-spacing: 2.8px;
+            margin-bottom: -13px;
+        }
+    }
+
+    .c-recommend__titlesub {
+        font-size: 3.4rem;
+        font-weight: 400;
+        letter-spacing: 4.8px;
+        line-height: 1;
+        text-align: right;
+        transform: translateX(-7px);
+        font-feature-settings: "palt" 1;
+        @include tab {
+            font-size: 1.8rem;
+        }
+        @include sp {
+            font-size: 1.3rem;
+            letter-spacing: 1.8px;
+            transform: translate(5px, 19px);
+        }
+    }
+
+    .c-recommend__titlesub--blue {
+        color: $blue;
+        font-size: 4.6rem;
+        @include tab {
+            font-size: 3rem;
+        }
+        @include sp {
+            font-size: 1.7rem;
+        }
+    }
 
     .l-container--w1740 {
-        padding-left: 79px;
-        padding-right: 79px;
+        padding-left: 78px;
+        padding-right: 78px;
+        padding-bottom: 77px;
+        @include tab {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         @include sp {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
@@ -15,18 +106,38 @@
         flex-wrap: wrap;
         --mr: -25px;
         margin-right: var(--mr);
+        margin-top: -6.5%;
+        padding-top: 30px;
+        @include tab {
+            --mr: -20px;
+        }
+        @include sp {
+            --mr: -15px;
+            padding-top: 42px;
+        }
     }
 
     .c-recommend__item {
         --width: 25%;
         --mr: 25px;
         background: $white;
-        padding: 22px 20px 45px;
+        padding-top: 22px;
+        padding-left: 19px;
+        padding-right: 22px;
+        padding-bottom: 45px;
         width: calc(var(--width) - var(--mr));
         margin-right: var(--mr);
-        @include sp {
-            flex: auto;
+        @include tab {
             --width: 50%;
+            --mr: 20px;
+            margin-bottom: 25px;
+        }
+        @include sp {
+            --mr: 15px;
+            padding-top: 10px;
+            padding-left: 9.3px;
+            padding-right: 9.05px;
+            padding-bottom: 16px;
             margin-bottom: 15px;
         }
     }
@@ -48,11 +159,23 @@
     .c-recommend__itemtitle {
         font-size: 2.3rem;
         font-weight: normal;
-        margin-top: 17px;
-        margin-bottom: 5px;
+        margin-top: 23px;
+        margin-bottom: 14px;
+        letter-spacing: 0;
+        @include sp {
+            font-size: 1.1rem;
+            margin-top: 11px;
+            margin-bottom: 4px;
+        }
 
-        span {
-            letter-spacing: 0.5em;
+        .c-recommend__itemfun {
+            letter-spacing: 0.1px;
+            margin-left: -1px;
+            margin-right: -5px;
+            @include sp {
+                margin-left: -1px;
+                margin-right: -2px;
+            }
         }
     }
 
@@ -60,7 +183,15 @@
         font-size: 1.9rem;
         font-weight: 300;
         letter-spacing: 0.01em;
-        line-height: 1.45;
+        line-height: 1.43;
         line-break: anywhere;
+        padding-right: 10px;
+        @include sp {
+            font-size: 0.95rem;
+            padding-right: 6px;
+            line-height: 1.4;
+            padding-right: 4px;
+            line-break: auto;
+        }
     }
 }

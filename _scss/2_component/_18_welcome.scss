@@ -1,22 +1,42 @@
 .c-welcome {
-    margin-top: 108px;
+    margin-top: 97px;
+    @include sp {
+        margin-top: 61px;
+    }
 
     .l-container {
         max-width: 1280px;
         width: 100%;
         margin: 0 auto;
         padding: 0 30px;
+        @include tab {
+            max-width: 800px;
+        }
     }
 
     .c-welcome__titlesub {
         font-size: 3.4rem;
         font-weight: 400;
         line-height: 1.2;
-        letter-spacing: 2px;
+        letter-spacing: -0.99px;
+        @include tab {
+            font-size: 2.1rem;
+        }
+        @include sp {
+            font-size: 1.3rem;
+        }
     }
 
-    .c-welcome__titlesub span {
+    .c-welcome__titlesub--blue {
         color: $blue;
+        font-size: 4.6rem;
+        line-height: 1;
+        @include tab {
+            font-size: 3.4rem;
+        }
+        @include sp {
+            font-size: 1.7rem;
+        }
     }
 
     .c-welcome__titlemain {
@@ -24,37 +44,245 @@
         line-height: 1.2;
         letter-spacing: 4.6px;
         font-family: "Oswald", sans-serif;
-        font-weight: 400;
+        font-weight: 300;
         margin-top: 33px;
         transform: translateX(22px);
+        @include tab {
+            font-size: 2.3rem;
+            transform: translateX(0);
+            margin-top: 26px;
+        }
+        @include sp {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-top: 13px;
+        }
     }
     //ANCHOR layout
     .c-welcome__list {
-        margin-top: 83px;
+        margin-top: 85px;
+        @include sp {
+            margin-top: 48px;
+        }
     }
 
     .c-welcome__item {
         display: flex;
+        flex-direction: row;
+        margin-bottom: 95px;
+        margin-right: -15px;
+        margin-left: -15px;
+        @include tab {
+            flex-wrap: wrap;
+        }
+        @include sp {
+            margin-bottom: 62px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            margin-right: -28px;
+        }
     }
 
     .c-welcome__itemone {
+        .c-welcome__itemtitle--blue {
+            letter-spacing: -1px;
+            margin-right: -5px;
+            @include sp {
+                font-size: 1.8rem;
+                letter-spacing: 0;
+                margin-right: -3px;
+            }
+        }
+
+        .c-welcome__itemtext {
+            @include tab {
+                margin-bottom: 36px;
+            }
+            @include sp {
+                margin-bottom: 13px;
+            }
+            // padding-left: 24px;
+            // padding-left: 8px;
+        }
+
         .c-welcome__itemlayer {
-            margin-left: 78px;
+            // --ml: 67px;
+            // margin-left: var(--ml);
+        }
+
+        .c-welcome__itemdesc {
+            letter-spacing: 0.6px;
+            @include sp {
+                margin-top: 10px;
+                letter-spacing: 0.01px;
+                transform: translateX(-1px);
+            }
+        }
+    }
+
+    .c-welcome__itemtwo {
+        margin-bottom: 99px;
+        @include sp {
+            margin-bottom: 62px;
+        }
+
+        .c-welcome__itemlayer {
+            margin-left: 26px;
+            text-align: left;
+            @include tab {
+                margin-left: 0;
+            }
+
+            .c-welcome__itemimg {
+                @include sp {
+                    margin-left: -12px;
+                }
+            }
+        }
+
+        .c-welcome__itemdesc {
+            letter-spacing: 0.7px;
+            line-break: anywhere;
+            @include sp {
+                margin-top: 11px;
+                line-height: 1.55;
+            }
+        }
+
+        .c-welcome__itemtext {
+            padding-left: 7px;
+            @include tab {
+                margin-bottom: 36px;
+            }
+            @include sp {
+                margin-bottom: 15px;
+            }
+        }
+
+        .c-welcome__itembox {
+            padding-left: 81px;
+            @include sp {
+                padding-left: 41px;
+                padding-top: 4px;
+            }
+        }
+
+        .c-welcome__itemicon {
+            margin-left: 0;
+        }
+
+        .c-welcome__itemtitle--blue {
+            margin-left: -7px;
+            margin-right: -8px;
+            letter-spacing: -0.2px;
+            @include sp {
+                margin-left: -3px;
+                margin-right: -3px;
+            }
+        }
+
+        .c-welcome__itemtitle {
+            &::before {
+                top: -30px;
+                right: -52px;
+                @include sp {
+                    top: -15px;
+                    right: -26px;
+                }
+            }
+        }
+    }
+
+    .c-welcome__itemthree {
+        .c-welcome__itemtitle--blue {
+            margin-left: -7px;
+            margin-right: -8px;
+            letter-spacing: 0.5px;
+            @include sp {
+                margin-left: -3px;
+                margin-right: -1px;
+                letter-spacing: -0.5px;
+            }
+        }
+
+        .c-welcome__itemtitle {
+            &::before {
+                top: -33px;
+                right: -40px;
+                @include sp {
+                    top: -17px;
+                    right: -20px;
+                }
+            }
+        }
+
+        .c-welcome__itembox {
+            @include sp {
+                padding-left: 49px;
+            }
+        }
+
+        .c-welcome__itemtext {
+            margin-bottom: 35px;
+            @include sp {
+                margin-bottom: 13px;
+            }
+        }
+
+        .c-welcome__itemdesc {
+            letter-spacing: 0.7px;
+            line-break: anywhere;
+        }
+
+        .c-welcome__itemicon {
+            @include sp {
+                margin-left: 7px;
+            }
         }
     }
 
     .c-welcome__itemtext {
-        padding-left: 24px;
         margin-top: -31px;
     }
 
     .c-welcome__itemicon {
-        width: 89px;
+        width: 88px;
+        margin-left: 24px;
+        @include tab {
+            margin-left: 0;
+        }
+        @include sp {
+            width: 45px;
+            margin-left: 13px;
+        }
     }
 
     .c-welcome__itembox {
-        margin-left: 82px;
-        margin-top: 19px;
+        padding-left: 104px;
+        padding-top: 12px;
+        @include sp {
+            padding-left: 55px;
+            padding-top: 5px;
+        }
+    }
+
+    .c-welcome__itemlabel {
+        text-align: left;
+        // padding-left: 9px;
+    }
+
+    .c-welcome__itemlayer {
+        text-align: right;
+        @include tab {
+            text-align: center !important;
+        }
+        // margin-right: -15px;
     }
 
     .c-welcome__itemtitle {
@@ -63,31 +291,69 @@
         position: relative;
         display: inline;
         letter-spacing: -0.1px;
+        @include sp {
+            font-size: 1.4rem;
+            letter-spacing: 0;
+        }
 
         &::before {
-            content: url(../assets/img/welcome/icontext.svg);
+            content: "";
             position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 30px;
-            height: 30px;
+            top: -32px;
+            right: -28px;
+            background-image: url(../assets/img/welcome/icontext.svg);
+            background-size: 100% 100%;
+            width: 42px;
+            height: 34px;
+            @include sp {
+                width: 21px;
+                height: 17px;
+                top: -16px;
+                right: -13px;
+            }
         }
     }
 
     .c-welcome__itemtitle--blue {
         color: $blue;
         font-size: 3.6rem;
+        letter-spacing: -4px;
+        margin-left: -4px;
+        @include tab {
+            font-size: 2.8rem;
+        }
+        @include sp {
+            font-size: 1.8rem;
+        }
     }
 
     .c-welcome__itemdesc {
         font-size: 2.1rem;
-        line-height: 1.6;
-        margin-top: 10px;
+        line-height: 1.619;
+        letter-spacing: 0.03em;
+        margin-right: -15px;
+        margin-top: 26px;
+        @include tab {
+            margin-right: 0;
+        }
+        @include sp {
+            font-size: 1.1rem;
+        }
     }
 
-    .c-welcome__itemlayer {
+    .c-welcome__col {
+        width: 50%;
+        padding: 0 15px;
+        @include tab {
+            width: 100%;
+        }
     }
 
     .c-welcome__itemimg {
+        max-width: 530px;
+        width: 100%;
+        @include sp {
+            max-width: 290px;
+        }
     }
 }

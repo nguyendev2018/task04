@@ -1,26 +1,49 @@
 .c-worries {
     margin-top: 82px;
+    @include sp {
+        margin-top: 49px;
+    }
 
     .l-container {
         margin: 0 auto;
         max-width: $container--w1562 + 50px;
         padding-left: 25px;
         padding-right: 25px;
+        @include tab {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+        @include sp {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     }
 
     .c-worries__heading {
-        letter-spacing: 0.01em;
-        color: $black;
-        font-size: 3.6rem;
+        // letter-spacing: 0.01em;
+        // color: $black;
+        // font-size: 3.6rem;
         line-height: 1.2;
+        // font-weight: 400;
+        // text-align: center;
+        transform: translateX(21px);
+        font-size: 3.6rem;
         font-weight: 400;
         text-align: center;
-        transform: translateX(21px);
+        letter-spacing: 3.1px;
+        font-feature-settings: "palt" 1;
+        @include tab {
+            transform: translateX(0);
+            font-size: 3rem;
+        }
+        @include sp {
+            font-size: 1.5rem;
+            letter-spacing: 1.22px;
+        }
     }
 
     .c-worries__boxtitle {
         letter-spacing: 0;
-        display: inline;
         position: relative;
         top: -1px;
         left: -2px;
@@ -28,6 +51,16 @@
         line-height: 1.2;
         color: $white;
         font-feature-settings: "palt";
+        padding-left: 10px;
+        padding-right: 10px;
+        line-break: anywhere;
+        @include tab {
+            font-size: 3.3rem;
+        }
+        @include sp {
+            font-size: 1.7rem;
+            line-height: 1.2;
+        }
     }
 
     .c-worries__bg {
@@ -43,35 +76,90 @@
     .c-worries__list {
         display: flex;
         margin-top: 32px;
-        padding-left: 32px;
+        margin-left: 2%;
+        justify-content: space-between;
+        @include tab {
+            margin-left: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include sp {
+            margin-top: 11px;
+        }
     }
 
     .c-worries__item {
-        --width: 33.33%;
-        --mr: 3.6%;
-        width: var(--width);
-        margin-right: var(--mr);
+        width: calc(100% / 3.23);
 
-        &:last-child {
-            --mr: 0;
-        }
         @include tab {
+            width: calc(50% - 4%);
+            margin-right: 4%;
+        }
+        @include sp {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: -10px;
         }
     }
 
     .c-worries__itemtwo {
         position: relative;
         left: 3px;
+        @include sp {
+            left: 0;
+        }
+
+        .c-worries__itemtop {
+            @include sp {
+                text-align: right;
+            }
+        }
+
+        .c-worries__itemcase {
+            @include sp {
+                bottom: 37px;
+                right: 56px;
+            }
+        }
+
+        .c-worries__main {
+            &::before {
+                @include sp {
+                    transform: scaleX(-1);
+                    left: unset;
+                    right: 91px;
+                }
+            }
+        }
     }
 
     .c-worries__itemtop {
         position: relative;
-        margin-left: 4%;
+        margin-left: 5%;
+        @include sp {
+            margin-left: 6%;
+        }
     }
 
     .c-worries__itemthree {
         position: relative;
         left: 8px;
+        @include sp {
+            left: 0;
+        }
+        // .c-worries__itemtop {
+        //     @include sp {
+        //         margin-left: 4%;
+        //     }
+        // }
+
+        .c-worries__mainlabel {
+            @include sp {
+                left: unset;
+                right: -7px;
+                top: -8px;
+            }
+        }
     }
 
     .c-worries__itemnumber {
@@ -80,6 +168,9 @@
         color: $gray-light;
         line-height: 1;
         letter-spacing: 0;
+        @include sp {
+            font-size: 14.8rem;
+        }
     }
 
     .c-worries__itemcase {
@@ -88,12 +179,24 @@
         color: #c7c7c7;
         position: absolute;
         bottom: 56px;
-        left: 87px;
+        left: 88px;
+        right: 0;
         letter-spacing: 6.3px;
+        @include tab {
+            font-size: 3.3rem;
+        }
+        @include sp {
+            bottom: 36px;
+            left: 62px;
+            font-size: 1.7rem;
+            letter-spacing: 4px;
+        }
     }
 
     .c-worries__main {
+        --mwidth: 474px;
         background: $black;
+        max-width: var(--mwidth);
         width: 100%;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -102,6 +205,16 @@
         margin-top: 26px;
         position: relative;
         bottom: 30px;
+        @include tab {
+            --mwidth: 100%;
+        }
+        @include sp {
+            padding-top: 33px;
+            padding-bottom: 33px;
+            left: 7px;
+            border-radius: 6px;
+            margin-top: 29px;
+        }
 
         &::before {
             content: url("/assets/img/worries/arrow.png");
@@ -111,6 +224,12 @@
             background-size: 100% 100%;
             bottom: calc(100% - 2px);
             left: 136px;
+            right: 0;
+
+            @include sp {
+                left: 91px;
+                bottom: calc(100% - 9px);
+            }
         }
     }
 
@@ -122,6 +241,7 @@
     }
 
     .c-worries__mainlabel {
+        width: 213px;
         position: absolute;
         top: -15px;
         right: -11px;
@@ -129,10 +249,19 @@
         font-family: "Noto Serif JP", serif;
         font-size: 1.8rem;
         border-radius: 1.7rem;
-        letter-spacing: -1px;
+        letter-spacing: 0.6px;
         padding: 8.5px 21px;
         line-height: 1;
         color: white;
         font-feature-settings: "palt";
+        @include sp {
+            left: -6px;
+            right: 0;
+            font-size: 1.3rem;
+            width: 146px;
+            padding: 6px 0;
+            top: -10px;
+            letter-spacing: -1.6px;
+        }
     }
 }

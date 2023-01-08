@@ -27,7 +27,8 @@
         "number" : "01",
         "text" : "子育てにはどんな家が良いんだろう？",
         "type" : "case",
-        "classdata" : "c-worries__itemone"
+        "label" : "",
+                "classdata" : "c-worries__itemone"
       },
       {
         "number" : "02",
