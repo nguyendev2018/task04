@@ -1,4 +1,6 @@
 .c-plan {
+    margin-top: 122px;
+
     .l-container {
         max-width: 1256px;
         width: 100%;
@@ -9,12 +11,11 @@
     .c-plan__heading {
         text-align: center;
         font-size: 4.8rem;
-        font-weight: 300;
-        letter-spacing: 0.1em;
+        letter-spacing: 2.4px;
         color: #000;
-        position: relative;
-        padding-bottom: 12px;
+        padding-bottom: 25px;
         font-family: "Oswald", sans-serif;
+        font-weight: 300;
         position: relative;
 
         &::after {
@@ -30,6 +31,14 @@
 
     .c-plan__list {
         display: flex;
+        margin-top: 74px;
+
+        .l-container {
+            max-width: 1256px+60px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+        }
     }
 
     .c-plan__item {
@@ -38,54 +47,129 @@
     }
 
     .c-plan__itemleft {
-        width: 53%;
+        width: 51%;
+        margin-left: 2.2%;
+        position: relative;
+    }
+
+    .c-plan__itemright {
+        position: relative;
+
+        .c-plan__cricle {
+            bottom: -23px;
+            left: 91px;
+        }
+    }
+
+    .c-plan__cricle {
+        position: absolute;
+        background-color: #231815;
+        color: #fff;
+        border-radius: 50%;
+        bottom: -23px;
+        left: 39px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        line-height: 3;
     }
 
     .c-plan__itemright {
         width: 47%;
-        padding-left: 4%;
+        padding-left: 6%;
+        margin-top: 0.6%;
     }
 
     .c-plan__menulist {
         display: flex;
         justify-content: center;
         margin-bottom: 80px;
+        margin-top: 44px;
     }
 
-    .c-plan__menuitem {
-        margin-left: 40px;
+    .c-plan__itemnumber {
+        font-size: 2.2rem;
+        font-weight: 300;
+        letter-spacing: 0;
     }
 
-    .c-plan__menuitem span {
+    .c-plan__menuitem .c-plan__itemtext {
         font-size: 2.2rem;
         font-weight: 300;
         font-feature-settings: "palt";
+        letter-spacing: 0;
     }
 
-    .c-plan__itemtext {
-        margin-right: 20px;
-        font-size: 2.2rem;
-        text-align: left;
-    }
-
+    // ANCHOR table
     .c-plan__table {
         width: 100%;
-    }
+        margin-top: 98px;
 
-    .c-plan__tableitem {
-        width: 100%;
-        border-bottom: 1px solid #cbcbcb;
-        min-height: 81px;
-        font-weight: 300;
-        font-feature-settings: "palt";
-        font-feature-settings: "palt";
-        padding-top: 29px;
-        display: flex;
-    }
+        .l-container {
+            max-width: 1196px + 60px;
+            padding: 0 30px;
+            margin: 0 auto;
+        }
 
-    .c-plan__itemtext {
-        font-size: 2.5rem;
-        display: inline-block;
-        line-height: 1.8;
+        .c-plan__tableleft {
+            min-width: 275px;
+            padding-left: 12px;
+            letter-spacing: 0;
+        }
+
+        .c-plan__menutwspacing {
+            letter-spacing: 0.05em;
+        }
+
+        .c-plan__tableright {
+            letter-spacing: 1.4px;
+            padding-left: 15px;
+        }
+
+        .c-plan__tableborder {
+            padding-left: 4px;
+        }
+
+        .c-plan__tableitem {
+            width: 100%;
+            border-bottom: 1px solid #cbcbcb;
+            min-height: 78px;
+            font-weight: 300;
+            font-feature-settings: "palt";
+            padding-top: 29px;
+            display: flex;
+        }
+
+        .c-plan__tabletext {
+            font-size: 2.5rem;
+        }
+
+        .c-plan__itemtext {
+            font-size: 2.5rem;
+            display: inline-block;
+            line-height: 1.8;
+            letter-spacing: 0;
+            text-align: left;
+        }
+        //ANCHOR menu table list
+        .c-plan__menutwitem {
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 1.6;
+            display: inline-block;
+            margin-right: 12px;
+            padding: 0 10px 4px;
+            border-radius: 3px;
+            border: 1px solid #cbcbcb;
+            font-feature-settings: "palt";
+            margin-bottom: 10px;
+        }
+
+        .c-plan__menutwlink {
+        }
+
+        .c-plan__spacing {
+            letter-spacing: 1px;
+        }
     }
 }

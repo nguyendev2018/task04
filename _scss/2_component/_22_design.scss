@@ -1,4 +1,6 @@
 .c-design {
+    margin-top: 123px;
+
     .l-twocolumn {
     }
 
@@ -20,7 +22,7 @@
 
     .c-design__bannerlayer {
         width: 100%;
-        padding-bottom: 47.6%;
+        padding-bottom: 47.4%;
         position: relative;
     }
 
@@ -34,6 +36,10 @@
         transform: translate(-50%, -50%);
     }
 
+    .c-design__arrow {
+        padding-top: 34px;
+    }
+
     .c-design__arrowleft {
         .c-design__arrowbtn {
         }
@@ -41,11 +47,11 @@
 
     .c-design__arrowbox {
         width: 53px;
-        height: 53px;
+        height: 54px;
         margin-left: 20px;
         background-color: #000;
         text-align: center;
-        padding-top: 22px;
+        padding-top: 25px;
         float: right;
         cursor: pointer;
     }
@@ -75,13 +81,15 @@
         }
 
         .c-design__infortitle {
+            margin-top: -11px;
+            letter-spacing: 5px;
             color: #000;
             font-size: 4.8rem;
             font-family: "Oswald", sans-serif;
             font-weight: 300;
-            padding-bottom: 17px;
+            padding-bottom: 28px;
             position: relative;
-            letter-spacing: 0.1px;
+            text-transform: uppercase;
 
             &::before {
                 position: absolute;
@@ -98,16 +106,18 @@
             font-size: 2.7rem;
             line-height: 1.4;
             padding: 25px 0 32px;
+            letter-spacing: 0;
         }
 
         .c-design__inforcontent {
             font-size: 1.9rem;
             font-weight: 300;
-            line-height: 1.8;
+            line-height: 1.83;
+            letter-spacing: 0;
         }
 
         .c-design__itemvideo {
-            margin-top: 127px;
+            margin-top: 102px;
             width: 100%;
             max-width: 702px;
             margin-left: auto;
@@ -115,7 +125,7 @@
 
         .c-design__itemlayer {
             width: 100%;
-            padding-bottom: 56.25%;
+            padding-bottom: 56%;
             position: relative;
 
             iframe {

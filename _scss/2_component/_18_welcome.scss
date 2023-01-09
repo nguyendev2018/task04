@@ -1,5 +1,5 @@
 .c-welcome {
-    margin-top: 97px;
+    margin-top: 100px;
     @include sp {
         margin-top: 61px;
     }
@@ -18,7 +18,7 @@
         font-size: 3.4rem;
         font-weight: 400;
         line-height: 1.2;
-        letter-spacing: -0.99px;
+        letter-spacing: -0.9px;
         @include tab {
             font-size: 2.1rem;
         }
@@ -45,8 +45,8 @@
         letter-spacing: 4.6px;
         font-family: "Oswald", sans-serif;
         font-weight: 300;
-        margin-top: 33px;
-        transform: translateX(22px);
+        margin-top: 35px;
+
         @include tab {
             font-size: 2.3rem;
             transform: translateX(0);
@@ -85,7 +85,6 @@
 
         &:nth-child(even) {
             flex-direction: row-reverse;
-            margin-right: -28px;
         }
     }
 
@@ -133,15 +132,15 @@
         }
 
         .c-welcome__itemlayer {
-            margin-left: 26px;
+            padding-left: 40px;
             text-align: left;
             @include tab {
-                margin-left: 0;
+                padding-left: 0;
             }
 
             .c-welcome__itemimg {
                 @include sp {
-                    margin-left: -12px;
+                    padding-left: -12px;
                 }
             }
         }
@@ -155,18 +154,21 @@
             }
         }
 
-        .c-welcome__itemtext {
-            padding-left: 7px;
-            @include tab {
-                margin-bottom: 36px;
-            }
-            @include sp {
-                margin-bottom: 15px;
-            }
+        .c-welcome__itemlabel {
+            margin-left: 28px;
         }
+        // .c-welcome__itemtext {
+        //     padding-left: 7px;
+        //     @include tab {
+        //         margin-bottom: 36px;
+        //     }
+        //     @include sp {
+        //         margin-bottom: 15px;
+        //     }
+        // }
 
         .c-welcome__itembox {
-            padding-left: 81px;
+            padding-left: 75px;
             @include sp {
                 padding-left: 41px;
                 padding-top: 4px;
