@@ -91,6 +91,7 @@
         font-size: 2.2rem;
         font-weight: 300;
         letter-spacing: 0;
+        padding-left: 24px;
     }
 
     .c-plan__menuitem .c-plan__itemtext {
@@ -98,6 +99,7 @@
         font-weight: 300;
         font-feature-settings: "palt";
         letter-spacing: 0;
+        padding-left: 15px;
     }
 
     // ANCHOR table
@@ -166,6 +168,8 @@
         }
 
         .c-plan__menutwlink {
+            font-size: 2rem;
+            letter-spacing: 0;
         }
 
         .c-plan__spacing {

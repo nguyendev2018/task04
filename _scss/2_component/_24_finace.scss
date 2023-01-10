@@ -1,129 +1,137 @@
 .c-finace {
-  padding-bottom: 80px;
-  background-color: #ededed;
-  margin-top: 95px;
-  .l-container {
-    max-width: 1398px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
+    padding-bottom: 80px;
+    background-color: #ededed;
+    margin-top: 95px;
 
-  .c-finace__heading {
-    padding-top: 93px;
-    text-align: center;
-  }
-
-  .c-finace__title {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 4.8rem;
-    color: #000;
-    letter-spacing: 0.095em;
-    padding-bottom: 28px;
-    margin-bottom: 58px;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 58px;
-      height: 1px;
-      background-color: #231815;
-      bottom: 0;
-      left: calc(50% - 29px);
-    }
-  }
-
-  .c-finace__titlesub {
-    background-color: #231815;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #fff;
-    display: inline-block;
-    font-feature-settings: "palt";
-    letter-spacing: 0.05em;
-    line-height: 1.5;
-    padding: 10px 54px;
-    margin-bottom: 45px;
-  }
-
-  .c-finace__list {
-    padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .c-finace__item {
-    padding-left: 32px;
-    padding-right: 32px;
-    flex: 1;
-    width: 50%;
-  }
-  .c-finace__item > * {
-    background-color: #fff;
-    padding: 92px 105px 65px 85px;
-    height: 100%;
-    min-height: 430px;
-  }
-  .c-finace__itemleft li {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2.2rem;
-    line-height: 1.5;
-    padding: 15px 0 21px;
-  }
-  .c-fincace__itemleft {
-    min-width: 90px;
-    flex: none;
-  }
-  .c-fincace__itemright {
-    padding-left: 5px;
-    font-feature-settings: "palt";
-    letter-spacing: -0.01em;
-  }
-  .c-fincace__itemcenter {
-    background: radial-gradient(circle closest-side, #000 50%, transparent);
-    background-position: bottom;
-    background-size: 30px 5px;
-    background-repeat: repeat-x;
-    background-position-y: center;
-    flex: 1;
-  }
-
-  .c-finace__itemright {
-    padding-top: 92px;
-    padding-left: 92px;
-    font-feature-settings: "palt";
-    letter-spacing: -0.01em;
-    position: relative;
-
-    .c-finace__itemlabel {
-      position: absolute;
-      top: -17px;
-      right: -43px;
-      width: 205px;
+    .l-container {
+        max-width: 1398px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
     }
 
-    .c-finace__textsub {
-      font-size: 2.6rem;
-      font-weight: bold;
-      line-height: 2.4;
-      padding-left: 8px;
+    .c-finace__heading {
+        padding-top: 93px;
+        text-align: center;
     }
 
-    .c-finace__count {
-      margin: 22px 5px;
-      max-width: 320px;
+    .c-finace__title {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 4.8rem;
+        color: #000;
+        letter-spacing: 0.095em;
+        padding-bottom: 28px;
+        margin-bottom: 58px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 58px;
+            height: 1px;
+            background-color: #231815;
+            bottom: 0;
+            left: calc(50% - 29px);
+        }
     }
 
-    .c-finace__textinfo {
-      font-size: 2.2rem;
-      line-height: 1.5;
-      font-feature-settings: "palt";
-      padding-top: 12px;
-      font-weight: 400;
+    .c-finace__titlesub {
+        background-color: #231815;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #fff;
+        display: inline-block;
+        font-feature-settings: "palt";
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+        padding: 10px 54px;
+        margin-bottom: 45px;
     }
-  }
+
+    .c-finace__list {
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-finace__item {
+        padding-left: 32px;
+        padding-right: 32px;
+        flex: 1;
+        width: 50%;
+    }
+
+    .c-finace__item > * {
+        background-color: #fff;
+        padding: 92px 100px 65px 85px;
+        height: 100%;
+        min-height: 430px;
+    }
+
+    .c-finace__itemleft li {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        padding: 15px 0 21px;
+    }
+
+    .c-fincace__itemleft {
+        min-width: 90px;
+        flex: none;
+    }
+
+    .c-fincace__itemright {
+        font-feature-settings: "palt";
+        letter-spacing: 0;
+        text-align: right;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .c-fincace__itemcenter {
+        background: radial-gradient(circle closest-side, #000 50%, transparent);
+        background-position: bottom;
+        background-size: 30px 5px;
+        background-repeat: repeat-x;
+        background-position-y: center;
+        flex: 1;
+    }
+
+    .c-finace__itemright {
+        padding-top: 92px;
+        padding-left: 92px;
+        font-feature-settings: "palt";
+        letter-spacing: -0.01em;
+        position: relative;
+
+        .c-finace__itemlabel {
+            position: absolute;
+            top: -17px;
+            right: -43px;
+            width: 205px;
+        }
+
+        .c-finace__textsub {
+            font-size: 2.6rem;
+            font-weight: bold;
+            line-height: 2.4;
+            padding-left: 8px;
+        }
+
+        .c-finace__count {
+            margin: 22px 5px;
+            max-width: 320px;
+        }
+
+        .c-finace__textinfo {
+            font-size: 2.2rem;
+            line-height: 1.5;
+            font-feature-settings: "palt";
+            padding-top: 12px;
+            font-weight: 400;
+        }
+    }
 }
