@@ -3,148 +3,152 @@
   <!-- @meta -->
   <meta name="description" content="Home page">
   <!-- @@meta -->
-  <section class="c-worries">
+  <section class="c-grid__bg">
+    <div class="c-grid__bginner">
+      <div class="c-worries">
 
-    <div class="l-container">
-      <div class="c-worries__bg">
-        <h2 class="c-worries__heading">
-          家づくりの、&nbsp;こんな不安やお悩みないですか？
-        </h2>
-        <div class="c-worries__list">
-          <% cases.case && cases.case.forEach(item=> { %>
-            <div class="c-worries__item <%= item.classdata %>">
-              <div class="c-worries__itemtop">
-                <div class="c-worries__itemnumber">
-                  <%= item.number %>
+        <div class="l-container">
+          <div class="c-worries__bg">
+            <h2 class="c-worries__heading">
+              家づくりの、&nbsp;こんな不安やお悩みないですか？
+            </h2>
+            <div class="c-worries__list">
+              <% cases.case && cases.case.forEach(item=> { %>
+                <div class="c-worries__item <%= item.classdata %>">
+                  <div class="c-worries__itemtop">
+                    <div class="c-worries__itemnumber">
+                      <%= item.number %>
+                    </div>
+                    <span class="c-worries__itemcase">
+                      <%= item.type %>
+                    </span>
+                  </div>
+                  <div class="c-worries__main">
+                    <% if( item.label !="" ) { %>
+                      <span class="c-worries__mainlabel">
+                        <%= item.label %>
+                      </span>
+                      <% } %>
+                        <h3 class="c-worries__boxtitle">
+                          <%= item.text%>
+                        </h3>
+                  </div>
                 </div>
-                <span class="c-worries__itemcase">
-                  <%= item.type %>
-                </span>
-              </div>
-              <div class="c-worries__main">
-                <% if( item.label !="" ) { %>
-                  <span class="c-worries__mainlabel">
-                    <%= item.label %>
-                  </span>
-                  <% } %>
-                    <h3 class="c-worries__boxtitle">
-                      <%= item.text%>
+                <% }) %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="c-welcome">
+        <div class="l-container">
+          <p class="c-welcome__titlesub u-text--center"> <span class="c-welcome__titlesubfirst">
+              はじめての家づくりが具体的に進む、ご来店の</span>
+            <span class="c-welcome__titlesub--blue">3つのメリット</span>
+          </p>
+          <h2 class="c-welcome__titlemain u-text--center">WELCOME TO MODELHOUSE</h2>
+          <div class="c-welcome__list">
+            <div class="c-welcome__item c-welcome__itemone">
+              <div class="c-welcome__col">
+                <div class="c-welcome__itemtext">
+                  <div class="c-welcome__itemlabel">
+                    <img src="../assets/img/welcome/icon1.svg" alt="" class="c-welcome__itemicon">
+                  </div>
+                  <div class="c-welcome__itembox">
+                    <h3 class="c-welcome__itemtitle">
+                      実物を見て触って
+                      <span class="c-welcome__itemtitle--blue">
+                        体感
+                      </span>
+                      できます !
                     </h3>
+                    <p class="c-welcome__itemdesc">
+                      カタログや資料だけではなく、高気密・高断熱の木 の住まいや、家事動線や収納スペースの女性目線で 叶った工夫など、実際に見て触ってご体感いただけ ます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-welcome__col ">
+                <div class=" c-welcome__itemlayer">
+                  <picture>
+                    <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-1-sp.jpg">
+                    <img src="../assets/img/welcome/welcome-1.jpg" alt="" class="c-welcome__itemimg">
+                  </picture>
+                </div>
+
               </div>
             </div>
-            <% }) %>
+            <div class="c-welcome__item c-welcome__itemtwo">
+              <div class="c-welcome__col">
+                <div class="c-welcome__itemtext">
+                  <div class="c-welcome__itemlabel">
+                    <img src="../assets/img/welcome/icon2.svg" alt="" class="c-welcome__itemicon">
+                  </div>
+                  <div class="c-welcome__itembox">
+                    <h3 class="c-welcome__itemtitle">
+                      土地情報
+                      <span class="c-welcome__itemtitle--blue">
+                        1000件以上
+                      </span>
+                      が見放題!
+                    </h3>
+                    <p class="c-welcome__itemdesc">
+                      愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスをいたします。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="c-welcome__col c-welcome__itemlayer">
+                <picture>
+                  <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-2-sp.jpg">
+                  <img src="../assets/img/welcome/welcome-2.jpg" alt="" class="c-welcome__itemimg">
+                </picture>
+              </div>
+            </div>
+            <div class="c-welcome__item c-welcome__itemone c-welcome__itemthree">
+              <div class="c-welcome__col">
+                <div class="c-welcome__itemtext">
+                  <div class="c-welcome__itemlabel">
+                    <img src="../assets/img/welcome/icon3.svg" alt="" class="c-welcome__itemicon">
+                  </div>
+                  <div class="c-welcome__itembox">
+                    <h3 class="c-welcome__itemtitle">
+                      お客様に合った
+                      <span class="c-welcome__itemtitle--blue">
+                        住宅ローン
+                      </span>
+                      を診断!
+                    </h3>
+                    <p class="c-welcome__itemdesc">
+                      住宅ローンアドバイザーの資格を持ったスタッフが、
+                      住宅ローン提携5大金融機関からお客様に合った適
+                      正住宅ローンを診断いたします。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="c-welcome__col c-welcome__itemlayer">
+                <picture>
+                  <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-3-sp.jpg">
+                  <img src="../assets/img/welcome/welcome-3.jpg" alt="" class="c-welcome__itemimg">
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
   </section>
-  <section class="c-welcome">
-    <div class="l-container">
 
-      <p class="c-welcome__titlesub u-text--center"> <span class="c-welcome__titlesubfirst">
-          はじめての家づくりが具体的に進む、ご来店の</span>
-        <span class="c-welcome__titlesub--blue">3つのメリット</span>
-      </p>
-      <h2 class="c-welcome__titlemain u-text--center">WELCOME TO MODELHOUSE</h2>
-      <div class="c-welcome__list">
-        <div class="c-welcome__item c-welcome__itemone">
-          <div class="c-welcome__col">
-            <div class="c-welcome__itemtext">
-              <div class="c-welcome__itemlabel">
-                <img src="../assets/img/welcome/icon1.svg" alt="" class="c-welcome__itemicon">
-              </div>
-              <div class="c-welcome__itembox">
-                <h3 class="c-welcome__itemtitle">
-                  実物を見て触って
-                  <span class="c-welcome__itemtitle--blue">
-                    体感
-                  </span>
-                  できます !
-                </h3>
-                <p class="c-welcome__itemdesc">
-                  カタログや資料だけではなく、高気密・高断熱の木 の住まいや、家事動線や収納スペースの女性目線で 叶った工夫など、実際に見て触ってご体感いただけ ます。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-welcome__col ">
-            <div class=" c-welcome__itemlayer">
-              <picture>
-                <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-1-sp.jpg">
-                <img src="../assets/img/welcome/welcome-1.jpg" alt="" class="c-welcome__itemimg">
-              </picture>
-            </div>
-
-          </div>
-        </div>
-        <div class="c-welcome__item c-welcome__itemtwo">
-          <div class="c-welcome__col">
-            <div class="c-welcome__itemtext">
-              <div class="c-welcome__itemlabel">
-                <img src="../assets/img/welcome/icon2.svg" alt="" class="c-welcome__itemicon">
-              </div>
-              <div class="c-welcome__itembox">
-                <h3 class="c-welcome__itemtitle">
-                  土地情報
-                  <span class="c-welcome__itemtitle--blue">
-                    1000件以上
-                  </span>
-                  が見放題!
-                </h3>
-                <p class="c-welcome__itemdesc">
-                  愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスをいたします。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="c-welcome__col c-welcome__itemlayer">
-            <picture>
-              <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-2-sp.jpg">
-              <img src="../assets/img/welcome/welcome-2.jpg" alt="" class="c-welcome__itemimg">
-            </picture>
-          </div>
-        </div>
-        <div class="c-welcome__item c-welcome__itemone c-welcome__itemthree">
-          <div class="c-welcome__col">
-            <div class="c-welcome__itemtext">
-              <div class="c-welcome__itemlabel">
-                <img src="../assets/img/welcome/icon3.svg" alt="" class="c-welcome__itemicon">
-              </div>
-              <div class="c-welcome__itembox">
-                <h3 class="c-welcome__itemtitle">
-                  お客様に合った
-                  <span class="c-welcome__itemtitle--blue">
-                    住宅ローン
-                  </span>
-                  を診断!
-                </h3>
-                <p class="c-welcome__itemdesc">
-                  住宅ローンアドバイザーの資格を持ったスタッフが、
-                  住宅ローン提携5大金融機関からお客様に合った適
-                  正住宅ローンを診断いたします。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="c-welcome__col c-welcome__itemlayer">
-            <picture>
-              <source media="(max-width:767px)" srcset="../assets/img/welcome/welcome-3-sp.jpg">
-              <img src="../assets/img/welcome/welcome-3.jpg" alt="" class="c-welcome__itemimg">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="c-gern">
     <div class="c-recommend">
       <div class="c-recommend__main">
         <div class="c-recommend__layercar">
-          <picture>
-            <source media="(max-width:767px)" srcset="../assets/img/recommend/car/car-sp.png">
-            <img src="../assets/img/recommend/car/car-pc.png" alt="recommended point">
-          </picture>
+
+          <img src="../assets/img/recommend/car/car-pc.png" alt="recommended point">
+
         </div>
         <div class="c-recommend__boxtitle">
           <h2 class="c-recommend__title">
@@ -160,7 +164,7 @@
 
         <div class="c-recommend__list">
 
-          <div class="c-recommend__item">
+          <div class="c-recommend__item c-recommend__itemone">
             <div class="c-recommend__itembox">
               <picture>
                 <source media="(max-width:767px)" srcset="../assets/img/recommend/re-1__sp.jpg">
@@ -175,7 +179,7 @@
             </div>
           </div>
 
-          <div class="c-recommend__item">
+          <div class="c-recommend__item  c-recommend__itemtwo">
             <div class="c-recommend__itembox">
               <picture>
                 <source media="(max-width:767px)" srcset="../assets/img/recommend/re-2__sp.jpg">
@@ -189,7 +193,7 @@
               住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。 </div>
           </div>
 
-          <div class="c-recommend__item">
+          <div class="c-recommend__item  c-recommend__itemthree">
             <div class="c-recommend__itembox">
               <picture>
                 <source media="(max-width:767px)" srcset="../assets/img/recommend/re-3__sp.jpg">
@@ -206,7 +210,7 @@
           </div>
 
 
-          <div class="c-recommend__item">
+          <div class="c-recommend__item  c-recommend__itemfour">
             <div class="c-recommend__itembox">
               <picture>
                 <source media="(max-width:767px)" srcset="../assets/img/recommend/re-4__sp.jpg">
@@ -219,6 +223,9 @@
             <div class="c-recommend__itemdesc">
               1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。 </div>
           </div>
+        </div>
+        <div class="c-recommend__icon">
+          <img src="../assets/img/recommend/car/car-sp.png" alt="recommend__icon">
         </div>
       </div>
     </div>
@@ -236,61 +243,63 @@
   <section class="c-design">
     <div class="c-design__banner">
       <div class="l-container">
-        <div class="c-design__bannerlist">
-          <div class="c-design__banneritem">
-            <div class="c-design__bannerlayer">
-              <img src="../assets/img/design/slick01-pc.jpg" alt="slick01" class="c-design__bannerimg">
+        <div class="c-design__bannerlistlayout">
+          <div class="c-design__bannerlist">
+            <div class="c-design__banneritem">
+              <div class="c-design__bannerlayer">
+                <img src="../assets/img/design/slick01-pc.jpg" alt="slick01" class="c-design__bannerimg">
+              </div>
             </div>
-          </div>
-          <div class="c-design__banneritem">
-            <div class="c-design__bannerlayer">
-              <img src="../assets/img/design/slick02-pc.jpg" alt="slick01" class="c-design__bannerimg">
+            <div class="c-design__banneritem">
+              <div class="c-design__bannerlayer">
+                <img src="../assets/img/design/slick02-pc.jpg" alt="slick01" class="c-design__bannerimg">
+              </div>
             </div>
-          </div>
-          <div class="c-design__banneritem">
-            <div class="c-design__bannerlayer">
-              <img src="../assets/img/design/slick03-pc.jpg" alt="slick01" class="c-design__bannerimg">
+            <div class="c-design__banneritem">
+              <div class="c-design__bannerlayer">
+                <img src="../assets/img/design/slick03-pc.jpg" alt="slick01" class="c-design__bannerimg">
+              </div>
             </div>
-          </div>
-          <div class="c-design__banneritem">
-            <div class="c-design__bannerlayer">
-              <img src="../assets/img/design/slick04-pc.jpg" alt="slick01" class="c-design__bannerimg">
+            <div class="c-design__banneritem">
+              <div class="c-design__bannerlayer">
+                <img src="../assets/img/design/slick04-pc.jpg" alt="slick01" class="c-design__bannerimg">
+              </div>
             </div>
-          </div>
-          <div class="c-design__banneritem">
-            <div class="c-design__bannerlayer">
-              <img src="../assets/img/design/slick05-pc.jpg" alt="slick01" class="c-design__bannerimg">
+            <div class="c-design__banneritem">
+              <div class="c-design__bannerlayer">
+                <img src="../assets/img/design/slick05-pc.jpg" alt="slick01" class="c-design__bannerimg">
+              </div>
             </div>
-          </div>
 
-        </div>
-        <div class="c-design__arrow">
-          <div class="c-design__arrowright c-design__arrowbox">
-            <picture>
-              <source media="(max-width:767px)" srcset="../assets/img/design/arrow/arrow-left/arrow-pc.png">
-              <img src="../assets/img/design/arrow/arrow-left/arrow-sp.png" alt="" class="c-design__arrowbtn">
-            </picture>
           </div>
-          <div class="c-design__arrowleft  c-design__arrowbox">
-            <picture>
-              <source media="(max-width:767px)" srcset="../assets/img/design/arrow/arrow-left/arrow-pc.png">
-              <img src="../assets/img/design/arrow/arrow-left/arrow-sp.png" alt="" class="c-design__arrowbtn">
-            </picture>
+          <div class="c-design__arrow">
+            <div class="c-design__arrowright c-design__arrowbox">
+              <picture>
+                <source media="(max-width:767px)" srcset="../assets/img/design/arrow/arrow-right/arrow-pc.svg">
+                <img src="../assets/img/design/arrow/arrow-right/arrow-pc.svg" alt="" class="c-design__arrowbtn">
+              </picture>
+            </div>
+            <div class="c-design__arrowleft  c-design__arrowbox">
+              <picture>
+                <source media="(max-width:767px)" srcset="../assets/img/design/arrow/arrow-left/arrow-pc.png">
+                <img src="../assets/img/design/arrow/arrow-left/arrow-sp.png" alt="" class="c-design__arrowbtn">
+              </picture>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
     <div class="c-design__infor">
       <div class="l-container">
         <div class="l-container__infortext">
-          <div class="l-twocolumn__col">
-            <div class="c-design__inforheader">
-              <h2 class="c-design__infortitle">Design</h2>
-              <p class="c-design__infortitlesub"> シンプルで美しいデザイン、<br>
-                いつまでも・誰にでも愛される空間に。
-              </p>
-            </div>
+          <div class=" c-design__inforheader">
+
+            <h2 class="c-design__infortitle">Design</h2>
+            <p class="c-design__infortitlesub"> シンプルで美しいデザイン、<br>
+              いつまでも・誰にでも愛される空間に。
+            </p>
             <p class="c-design__inforcontent">
               長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
               壁の色を白で統一したシンプルな間取り。<br>
@@ -298,8 +307,9 @@
               あなた色に合わせてコーディネートを楽しめる <br>
               年齢や性別を意識しない誰にでも愛される空間です。
             </p>
+
           </div>
-          <div class="l-twocolumn__col">
+          <div class="c-design__infovideo">
             <div class="c-design__itemvideo">
               <div class="c-design__itemlayer">
                 <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player"
@@ -314,7 +324,7 @@
     </div>
   </section>
 
-  <section class="c-plan">
+  <!-- <section class="c-plan">
     <h2 class="c-plan__heading">
       PLAN
     </h2>
@@ -443,7 +453,7 @@
 
     </div>
   </section>
-  <section class="c-finace">
+    <section class="c-finace">
     <div class="l-container">
       <div class="c-finace__heading">
         <h2 class="c-finace__title">
@@ -531,7 +541,7 @@
       <div class="l-container">
         <div class="c-web__list">
           <div class="c-web__item c-web__itemevon">
-            <div class="c-web__itemlayer ">
+            <a class="c-web__itemlayer ">
               <div class="c-web__image">
                 <img src="../assets/img/web/web1.svg" alt="WEB予約">
               </div>
@@ -539,9 +549,9 @@
                 <h3 class="c-web__title">WEB予約</h3>
                 <div class="c-web__desc">入力フォームに必要事項を入力</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="c-web__item c-web__itemuser">
+          <a class="c-web__item c-web__itemuser">
             <div class="c-web__itemlayer ">
               <div class="c-web__image">
                 <img src="../assets/img/web/web2.svg" class="c-web__" alt="WEB予約">
@@ -551,8 +561,8 @@
                 <div class="c-web__desc">来場されたら受付をお願いします</div>
               </div>
             </div>
-          </div>
-          <div class="c-web__item c-web__itemnote">
+          </a>
+          <a class="c-web__item c-web__itemnote">
             <div class="c-web__itemlayer ">
               <div class="c-web__image">
                 <img src="../assets/img/web/web3.svg" alt="WEB予約">
@@ -562,8 +572,8 @@
                 <div class="c-web__desc">アンケート記入後、丁寧にご説明</div>
               </div>
             </div>
-          </div>
-          <div class="c-web__item  c-web__itemwrapper">
+          </a>
+          <a class="c-web__item  c-web__itemwrapper">
             <div class="c-web__itemlayer">
               <div class="c-web__image">
                 <img src="../assets/img/web/web4.svg" alt="WEB予約">
@@ -574,8 +584,8 @@
               </div>
             </div>
 
-          </div>
-          <div class="c-web__item  c-web__itemgift">
+          </a>
+          <a class="c-web__item  c-web__itemgift">
             <div class="c-web__itemlayer">
               <div class="c-web__image">
                 <img src="../assets/img/web/web5.svg" alt="WEB予約">
@@ -586,7 +596,7 @@
               </div>
             </div>
 
-          </div>
+          </a>
 
         </div>
       </div>
@@ -733,7 +743,7 @@
       </div>
     </div>
   </section>
-  <section class="c-assets">
+ <section class="c-assets">
     <div class="l-container">
       <div class="c-assets__list">
         <div class="c-assets__item">
@@ -743,28 +753,34 @@
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               class="c-assets__iframe"></iframe>
           </div>
-
-
         </div>
         <div class="c-assets__item c-assets__info">
           <h2 class="c-assets__titleheading">access</h2>
           <p class="c-assets__titlesub">完全ご予約制見学会</p>
           <ul class="c-assets__textmenu">
             <li class="c-assets__textitem">
-              <span class="c-assets__label">
-                開催日
-              </span>
-              8 月 20 日（土）・21日（日）
+              <div class="c-assets__label">
+                <span class="c-assets__labelone">開催日</span> 
+              </div>
+             <span class="c-assets__labelitem">
+                8 月 20  日（土）・21日（日）
+              </span> 
             </li>
             <li class="c-assets__textitem">
-
-              <span class="c-assets__label">開催日</span>
-
+              <div class="c-assets__label">
+                <span class="c-assets__labeltwo">時間</span>
+              </div>
+              10：00 ～ 17：00 ※完全予約制
+            </li>
+            <li class="c-assets__textitem">
+              <div class="c-assets__label"> 
+                <span class="c-assets__labelthree">開催場所</span>
+              </div>
               〒000-0000 愛媛県今治市 000-0
             </li>
             <li class="c-assets__textitem">
               <span class="c-assets__label"></span>
-              <span class="c-assets__text">※車でお越しの際は、ナビで上記住所を設定してください。</span>
+              <span class="c-assets__textfooter">※車でお越しの際は、ナビで上記住所を設定してください。</span>
             </li>
           </ul>
         </div>
@@ -791,6 +807,6 @@
       </div>
     </div>
 
-  </footer>
+  </footer> --> -->
   <!-- @script -->
   <!-- @@script -->

@@ -81,11 +81,12 @@
     .c-fincace__itemleft {
         min-width: 90px;
         flex: none;
+        letter-spacing: 0; 
     }
 
     .c-fincace__itemright {
         font-feature-settings: "palt";
-        letter-spacing: 0;
+        letter-spacing: 0.2px;
         text-align: right;
         font-size: 22px;
         font-weight: 400;
@@ -102,7 +103,7 @@
 
     .c-finace__itemright {
         padding-top: 92px;
-        padding-left: 92px;
+        padding-left: 86px;
         font-feature-settings: "palt";
         letter-spacing: -0.01em;
         position: relative;
@@ -130,7 +131,7 @@
             font-size: 2.2rem;
             line-height: 1.5;
             font-feature-settings: "palt";
-            padding-top: 12px;
+            padding-top: 13px;
             font-weight: 400;
         }
     }

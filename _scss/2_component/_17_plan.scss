@@ -47,17 +47,23 @@
     }
 
     .c-plan__itemleft {
-        width: 51%;
-        margin-left: 2.2%;
+        width: 50%;
+        margin-left: 2.6%;
+        margin-top: 2px;
         position: relative;
+
+        .c-plan__cricle {
+            bottom: -5%;
+            left: 5.1%;
+        }
     }
 
     .c-plan__itemright {
         position: relative;
 
         .c-plan__cricle {
-            bottom: -23px;
-            left: 91px;
+            bottom: -5%;
+            left: 16.1%;
         }
     }
 
@@ -76,7 +82,7 @@
 
     .c-plan__itemright {
         width: 47%;
-        padding-left: 6%;
+        padding-left: 6.4%;
         margin-top: 0.6%;
     }
 
@@ -84,7 +90,7 @@
         display: flex;
         justify-content: center;
         margin-bottom: 80px;
-        margin-top: 44px;
+        margin-top: 47px;
     }
 
     .c-plan__itemnumber {

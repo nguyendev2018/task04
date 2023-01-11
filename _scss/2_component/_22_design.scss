@@ -1,7 +1,24 @@
 .c-design {
     margin-top: 123px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 
-    .l-twocolumn {
+    .c-design__banner {
+        .l-container {
+            max-width: 1454px;
+            width: 100%;
+            padding-right: 15px;
+            margin: 0;
+        }
+    }
+
+    .c-design__infovideo {
+        width: 50%;
+        @include tab {
+            width: 100%;
+        }
     }
 
     .l-container__infortext {
@@ -14,16 +31,30 @@
         padding-right: 15px;
     }
 
-    .c-design__banner {
-    }
+    .c-design__bannerlistlayout {
+        position: relative;
 
-    .c-design__bannerlist {
+        &::after {
+            width: 100%;
+            height: 73.5%;
+            position: absolute;
+            content: "";
+            background-color: #ededed;
+            top: 79.7%;
+            left: 49.7%;
+            z-index: -1;
+        }
     }
+    
 
     .c-design__bannerlayer {
         width: 100%;
         padding-bottom: 47.4%;
         position: relative;
+
+        &::after{
+           
+        }
     }
 
     .c-design__bannerimg {
@@ -37,13 +68,9 @@
     }
 
     .c-design__arrow {
-        padding-top: 34px;
+        padding-top: 36px;
     }
 
-    .c-design__arrowleft {
-        .c-design__arrowbtn {
-        }
-    }
 
     .c-design__arrowbox {
         width: 53px;
@@ -54,6 +81,14 @@
         padding-top: 25px;
         float: right;
         cursor: pointer;
+        @include sp {
+            width: 31px;
+            height: 31px;
+            margin-left: 12px;
+            background-color: #000;
+            text-align: center;
+            padding-top: 13px;
+        }
     }
 
     .c-design__arrowbtn {
@@ -72,6 +107,9 @@
             padding-right: 32px;
             padding-left: 32px;
             margin: 0 auto;
+            @include tab {
+                max-width: 576px;
+            }
         }
 
         .l-container__infortext {
@@ -90,6 +128,9 @@
             padding-bottom: 28px;
             position: relative;
             text-transform: uppercase;
+            @include sp {
+                font-size: 2.4rem;
+            }
 
             &::before {
                 position: absolute;
@@ -102,18 +143,34 @@
             }
         }
 
+        .c-design__inforheader {
+            width: 47%;
+            margin-right: 3%;
+            @include tab {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
         .c-design__infortitlesub {
             font-size: 2.7rem;
-            line-height: 1.4;
-            padding: 25px 0 32px;
+            font-weight: 400;
+            line-height: 1.36;
+            padding: 25px 0 35px;
             letter-spacing: 0;
+            @include sp {
+                font-size: 1.4rem;
+            }
         }
 
         .c-design__inforcontent {
             font-size: 1.9rem;
             font-weight: 300;
-            line-height: 1.83;
+            line-height: 1.8;
             letter-spacing: 0;
+            @include sp {
+                font-size: 1rem;
+            }            
         }
 
         .c-design__itemvideo {
@@ -135,8 +192,6 @@
             }
         }
 
-        .l-twocolumn__col {
-            width: 50%;
-        }
+      
     }
 }

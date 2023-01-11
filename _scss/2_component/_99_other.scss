@@ -4,3 +4,18 @@ other
 
 /*
 ------------------------------------------------------------*/
+.c-grid__bg {
+    background-image: url(../assets/img/worries/worries-bg.png);
+    background-size: 385px auto;
+    background-position-y: 330px;
+    background-position-x: 168px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c-grid__bginner {
+    width: 100%;
+    // max-width: 1873px;
+    // margin-left: auto;
+}

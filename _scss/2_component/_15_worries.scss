@@ -1,7 +1,7 @@
 .c-worries {
-    margin-top: 82px;
-    @include sp {
-        margin-top: 49px;
+    padding-top: 82px;
+    @include tab {
+        padding-top: 49px;
     }
 
     .l-container {
@@ -10,6 +10,7 @@
         padding-left: 25px;
         padding-right: 25px;
         @include tab {
+            max-width: 576px;
             padding-left: 4%;
             padding-right: 4%;
         }
@@ -51,21 +52,21 @@
         @include tab {
             font-size: 3.3rem;
         }
-        @include sp {
+        @include tab {
             font-size: 1.7rem;
             line-height: 1.2;
         }
     }
 
-    .c-worries__bg {
-        background-image: url("/assets/img/worries/worries-bg.png");
-        background-size: 385px auto;
-        background-position-y: 330px;
-        background-position-x: 168px;
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-    }
+    // .c-worries__bg {
+    //     background-image: url("/assets/img/worries/worries-bg.png");
+    //     background-size: 385px auto;
+    //     background-position-y: 330px;
+    //     background-position-x: 168px;
+    //     width: 100%;
+    //     max-width: 1920px;
+    //     margin: 0 auto;
+    // }
 
     .c-worries__list {
         display: flex;
@@ -86,12 +87,8 @@
         width: calc(100% / 3.23);
 
         @include tab {
-            width: calc(50% - 4%);
-            margin-right: 4%;
-        }
-        @include sp {
             width: 100%;
-            margin-right: 0;
+            margin: 0;
             margin-bottom: -10px;
         }
     }
@@ -99,26 +96,28 @@
     .c-worries__itemtwo {
         position: relative;
         left: 3px;
-        @include sp {
+        @include tab {
             left: 0;
         }
 
         .c-worries__itemtop {
-            @include sp {
+            @include tab {
                 text-align: right;
             }
         }
 
         .c-worries__itemcase {
-            @include sp {
+            @include tab {
                 bottom: 37px;
                 right: 56px;
             }
         }
 
         .c-worries__main {
+            margin-left: auto;
+
             &::before {
-                @include sp {
+                @include tab {
                     transform: scaleX(-1);
                     left: unset;
                     right: 91px;
@@ -130,7 +129,7 @@
     .c-worries__itemtop {
         position: relative;
         margin-left: 5%;
-        @include sp {
+        @include tab {
             margin-left: 6%;
         }
     }
@@ -138,20 +137,20 @@
     .c-worries__itemthree {
         position: relative;
         left: 8px;
-        @include sp {
+        @include tab {
             left: 0;
         }
         // .c-worries__itemtop {
-        //     @include sp {
+        //     @include tab {
         //         margin-left: 4%;
         //     }
         // }
 
         .c-worries__mainlabel {
-            @include sp {
+            @include tab {
                 left: unset;
-                right: -7px;
-                top: -8px;
+                right: -8px;
+                top: -11px;
             }
         }
     }
@@ -162,7 +161,7 @@
         color: $gray-light;
         line-height: 1;
         letter-spacing: 0;
-        @include sp {
+        @include tab {
             font-size: 14.8rem;
         }
     }
@@ -179,7 +178,7 @@
         @include tab {
             font-size: 3.3rem;
         }
-        @include sp {
+        @include tab {
             bottom: 36px;
             left: 62px;
             font-size: 1.7rem;
@@ -188,9 +187,8 @@
     }
 
     .c-worries__main {
-        --mwidth: 474px;
         background: $black;
-        max-width: var(--mwidth);
+        max-width: 474px;
         width: 100%;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -199,15 +197,16 @@
         margin-top: 26px;
         position: relative;
         bottom: 30px;
+
         @include tab {
-            --mwidth: 100%;
-        }
-        @include sp {
             padding-top: 33px;
             padding-bottom: 33px;
             left: 7px;
             border-radius: 6px;
-            margin-top: 29px;
+            margin-top: 30px;
+        }
+        @include sp {
+            max-width: 328px;
         }
 
         &::before {
@@ -220,7 +219,7 @@
             left: 136px;
             right: 0;
 
-            @include sp {
+            @include tab {
                 left: 91px;
                 bottom: calc(100% - 9px);
             }
@@ -244,11 +243,11 @@
         font-size: 1.8rem;
         border-radius: 1.7rem;
         letter-spacing: 0.6px;
-        padding: 8.5px 1px;
+        padding: 8.5px 10px;
         line-height: 1;
         color: white;
         font-feature-settings: "palt";
-        @include sp {
+        @include tab {
             left: -6px;
             right: 0;
             font-size: 1.3rem;

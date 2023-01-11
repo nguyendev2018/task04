@@ -1,7 +1,9 @@
 .c-web {
-    margin-top: 61px;
+    margin-top: 48px;
 
     .c-web__main {
+        margin-top: 73px;
+
         .l-container {
             max-width: 1686px + 60px;
             padding-right: 30px;
@@ -15,6 +17,10 @@
     text-align: center;
 }
 
+.c-web__itemlayer {
+    display: block;
+}
+
 .c-web__heading {
     line-height: 2.1;
     font-size: 3.4rem;
@@ -25,6 +31,9 @@
 .c-web__headingsup {
     font-weight: 300;
     font-size: 2.7rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+    margin-top: 15px;
 }
 
 .c-web__list {
@@ -66,6 +75,7 @@
     .c-web__itemlayer {
         padding-top: 20%;
         padding-bottom: 18%;
+        
     }
 
     .c-web__desc {
@@ -181,7 +191,6 @@
     background: #565f64;
     margin-left: 3.7%;
     width: calc(20% - 3.7%);
-    height: fit-content;
     position: relative;
 
     &:not(:last-child)::before {
@@ -228,6 +237,10 @@
         width: 100%;
         border-bottom: 1px solid;
     }
+}
+
+.c-web__table {
+    margin-top: 121px;
 }
 
 .c-web__textjapan {
@@ -277,9 +290,10 @@
 
     .c-web__tableheading {
         font-size: 3.2rem;
-        letter-spacing: 1.2px;
+        font-weight: 300;
+        letter-spacing: 1px;
         line-height: 1;
-        margin-top: 9px;
+        margin-top: 11px;
     }
 
     .c-web__bottom {
@@ -287,7 +301,7 @@
         letter-spacing: 0;
         text-align: right;
         padding-right: 53px;
-        padding-top: 19px;
+        padding-top: 22px;
         letter-spacing: 0.4px;
     }
 
@@ -327,14 +341,14 @@
     }
 
     .c-web__itemtwface {
-        padding-top: 21px;
+        padding-top: 16px;
 
         .c-web__tablelayer {
             width: 129px;
         }
 
         .c-web__tableinfotitle {
-            margin-top: 5px;
+            margin-top: 7px;
         }
     }
 
@@ -406,12 +420,14 @@
     }
 
     .c-web__itemzoom {
+        padding-top: 20px;
+
         .c-web__tablelayer {
             width: 119px;
         }
 
         .c-web__tableinfotitle {
-            margin-top: 6px;
+            margin-top: 9px;
         }
     }
 
@@ -435,6 +451,7 @@
 
         &:nth-of-type(n + 6) {
             border-bottom: unset;
+            padding-bottom: 13px;
         }
     }
 
@@ -451,7 +468,7 @@
         padding: 2px 27px;
         line-height: 2;
         border-radius: 25px;
-        margin-right: 38px;
+        margin-right: 42px;
         letter-spacing: -0.03em;
     }
 }

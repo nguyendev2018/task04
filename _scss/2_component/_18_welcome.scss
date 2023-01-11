@@ -1,7 +1,7 @@
 .c-welcome {
     margin-top: 100px;
     @include sp {
-        margin-top: 61px;
+        margin-top: 62px;
     }
 
     .l-container {
@@ -23,7 +23,18 @@
             font-size: 2.1rem;
         }
         @include sp {
+            max-width: 230px;
+            margin: 0 auto;
             font-size: 1.3rem;
+            line-height: 1.3;
+            padding: 0;
+        }
+    }
+
+    .c-welcome__titlesubfirst {
+        @include sp {
+            font-size: 1.3rem;
+            letter-spacing: 0;
         }
     }
 
@@ -36,6 +47,7 @@
         }
         @include sp {
             font-size: 1.7rem;
+            letter-spacing: 1px;
         }
     }
 
@@ -45,7 +57,7 @@
         letter-spacing: 4.6px;
         font-family: "Oswald", sans-serif;
         font-weight: 300;
-        margin-top: 35px;
+        margin-top: 31px;
 
         @include tab {
             font-size: 2.3rem;
@@ -55,7 +67,7 @@
         @include sp {
             font-size: 1.2rem;
             letter-spacing: 1px;
-            margin-top: 13px;
+            margin-top: 11px;
         }
     }
     //ANCHOR layout
@@ -140,7 +152,7 @@
 
             .c-welcome__itemimg {
                 @include sp {
-                    padding-left: -12px;
+                    margin-left: 14px;
                 }
             }
         }
@@ -151,26 +163,31 @@
             @include sp {
                 margin-top: 11px;
                 line-height: 1.55;
+                letter-spacing: -0.4px;
+                max-width: 253px;
             }
         }
 
         .c-welcome__itemlabel {
             margin-left: 28px;
+            @include sp {
+                margin-left: 8px;
+            }
         }
-        // .c-welcome__itemtext {
-        //     padding-left: 7px;
-        //     @include tab {
-        //         margin-bottom: 36px;
-        //     }
-        //     @include sp {
-        //         margin-bottom: 15px;
-        //     }
-        // }
+
+        .c-welcome__itemtext {
+            @include tab {
+                margin-bottom: 36px;
+            }
+            @include sp {
+                margin-bottom: 15px;
+            }
+        }
 
         .c-welcome__itembox {
             padding-left: 75px;
             @include sp {
-                padding-left: 41px;
+                padding-left: 49px;
                 padding-top: 4px;
             }
         }
@@ -215,8 +232,8 @@
 
         .c-welcome__itemtitle {
             &::before {
-                top: -33px;
-                right: -40px;
+                top: -31px;
+                right: -43px;
                 @include sp {
                     top: -17px;
                     right: -20px;
@@ -334,7 +351,7 @@
         line-height: 1.619;
         letter-spacing: 0.03em;
         margin-right: -15px;
-        margin-top: 26px;
+        margin-top: 29px;
         @include tab {
             margin-right: 0;
         }
