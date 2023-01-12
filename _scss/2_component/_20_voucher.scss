@@ -1,11 +1,17 @@
 .c-voucher {
     margin-top: 120px;
+    @include sp {
+        margin-top: 61px;
+    }
 
     .l-container {
         max-width: 1252px;
         width: 100%;
         margin: 0 auto;
         padding: 0 30px;
+        @include sp {
+            padding: 0 28.1px;
+        }
     }
    
 }

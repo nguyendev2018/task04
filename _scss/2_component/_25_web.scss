@@ -1,474 +1,706 @@
 .c-web {
-    margin-top: 48px;
+  margin-top: 48px;
 
-    .c-web__main {
-        margin-top: 73px;
-
-        .l-container {
-            max-width: 1686px + 60px;
-            padding-right: 30px;
-            padding-left: 30px;
-            margin: 0 auto;
-        }
+  .c-web__main {
+    margin-top: 73px;
+    @include sp {
+      margin-top: 37px;
     }
+
+    .l-container {
+      max-width: 1686px + 60px;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .c-web__header {
-    text-align: center;
+  text-align: center;
+  @include tab {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .c-web__itemlayer {
-    display: block;
+  display: block;
 }
 
 .c-web__heading {
-    line-height: 2.1;
-    font-size: 3.4rem;
-    font-weight: 400;
-    letter-spacing: 0;
+  line-height: 2.1;
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  @include sp {
+    font-size: 1.7rem;
+    padding-top: 7px;
+  }
 }
 
 .c-web__headingsup {
-    font-weight: 300;
-    font-size: 2.7rem;
-    line-height: 1.35;
+  font-weight: 300;
+  font-size: 2.7rem;
+  line-height: 1.35;
+  letter-spacing: 0.1px;
+  margin-left: 1px;
+  @include sp {
+    padding-top: 5px;
+    font-size: 1.35rem;
+    margin-top: 0;
     letter-spacing: 0;
-    margin-top: 15px;
+    line-height: 1.4;
+  }
+}
+
+.c-web__headingsuptext {
+  margin-left: 5px;
 }
 
 .c-web__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -3.7%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3.7%;
+  @include sp {
+    margin-left: -32px;
+  }
 }
 
 .c-web__image {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .c-web__info {
-    color: white;
-    padding: 0 23px;
-    text-align: center;
+  color: white;
+  padding: 0 23px;
+  text-align: center;
 }
 
 .c-web__itemevon {
-    &:not(:last-child)::before {
-        top: calc(50% - 3px);
-        right: -13%;
-    }
+  &:not(:last-child)::before {
+    top: calc(50% - 3px);
+    right: -13%;
+  }
 
-    .c-web__title {
-        padding-bottom: 11px;
+  .c-web__title {
+    padding-bottom: 11px;
+    @include sp {
+      padding-bottom: 8px;
     }
+  }
 
-    .c-web__image {
-        width: 41px;
-        margin-bottom: 27px;
+  .c-web__image {
+    width: 41px;
+    margin-bottom: 27px;
+    @include sp {
+      width: 20px;
+      margin-bottom: 6px;
     }
+  }
 
-    .c-web__itemlayer {
-        padding-top: 20%;
-        padding-bottom: 18%;
-        
+  .c-web__itemlayer {
+    padding-top: 20%;
+    padding-bottom: 18%;
+    @include sp {
+      padding-top: 19%;
+      padding-bottom: 18%;
     }
+  }
 
-    .c-web__desc {
-        padding-top: 16px;
+  .c-web__desc {
+    padding-top: 16px;
+    @include sp {
+      padding-top: 8px;
+      margin-left: -12px;
     }
+  }
 }
 
 .c-web__itemuser {
-    &:not(:last-child)::before {
-        top: calc(50% - 5px);
-        right: -12%;
-    }
+  &:not(:last-child)::before {
+    top: calc(50% - 5px);
+    right: -12%;
+  }
 
-    .c-web__itemlayer {
-        padding-top: 17%;
-        padding-bottom: 19%;
-    }
+  .c-web__itemlayer {
+    padding-top: 17%;
+    padding-bottom: 19%;
+  }
 
-    .c-web__image {
-        width: 35px;
-        margin-bottom: 26px;
+  .c-web__image {
+    width: 35px;
+    margin-bottom: 26px;
+    @include sp {
+      width: 18px;
+      margin-bottom: 10px;
     }
+  }
 
-    .c-web__title {
-        padding-bottom: 12px;
+  .c-web__title {
+    padding-bottom: 12px;
+    @include sp {
+      padding-bottom: 7px;
     }
+  }
 
-    .c-web__desc {
-        padding-top: 15px;
+  .c-web__desc {
+    padding-top: 15px;
+    @include sp {
+      padding-top: 9px;
+      margin-left: -20px;
+      margin-right: -24px;
     }
+  }
 }
 
 .c-web__itemnote {
-    &:not(:last-child)::before {
-        top: calc(50% - 5px);
-        right: -12%;
-    }
+  &:not(:last-child)::before {
+    top: calc(50% - 5px);
+    right: -12%;
+  }
 
-    .c-web__itemlayer {
-        padding-top: 19%;
-        padding-bottom: 19%;
-    }
+  .c-web__itemlayer {
+    padding-top: 19%;
+    padding-bottom: 19%;
+  }
 
-    .c-web__image {
-        width: 32px;
-        margin-bottom: 25px;
+  .c-web__image {
+    width: 32px;
+    margin-bottom: 25px;
+    @include sp {
+      width: 16px;
+      margin-bottom: 5px;
     }
+  }
 
-    .c-web__title {
-        padding-bottom: 12px;
+  .c-web__title {
+    padding-bottom: 12px;
+    @include sp {
+      padding-bottom: 7px;
     }
+  }
 
-    .c-web__desc {
-        padding-top: 15px;
+  .c-web__desc {
+    padding-top: 15px;
+    @include sp {
+      padding-top: 8px;
     }
+  }
 }
 
 .c-web__itemwrapper {
-    &:not(:last-child)::before {
-        top: calc(50% - 5px);
-        right: -12%;
-    }
+  &:not(:last-child)::before {
+    top: calc(50% - 5px);
+    right: -12%;
+  }
+  @include tab {
+    margin-top: 3.7%;
+  }
+  @include sp {
+    margin-top: 0;
+  }
 
-    .c-web__itemlayer {
-        padding-top: 20%;
-        padding-bottom: 18%;
-    }
+  .c-web__itemlayer {
+    padding-top: 20%;
+    padding-bottom: 18%;
+  }
 
-    .c-web__image {
-        width: 35px;
-        margin-bottom: 25px;
+  .c-web__image {
+    width: 35px;
+    margin-bottom: 25px;
+    @include sp {
+      width: 17px;
+      margin-bottom: 4px;
     }
+  }
 
-    .c-web__title {
-        padding-bottom: 12px;
+  .c-web__title {
+    padding-bottom: 12px;
+    @include sp {
+      padding-bottom: 7px;
     }
+  }
 
-    .c-web__desc {
-        padding-top: 16px;
+  .c-web__desc {
+    padding-top: 16px;
+    @include sp {
+      padding-top: 8px;
     }
+  }
 }
 
 .c-web__itemgift {
-    &:not(:last-child)::before {
-        top: calc(50% - 5px);
-        right: -12%;
-    }
+  &:not(:last-child)::before {
+    top: calc(50% - 5px);
+    right: -12%;
+  }
+  @include tab {
+    margin-top: 3.7%;
+  }
+  @include sp {
+    margin-top: 0;
+  }
 
-    .c-web__itemlayer {
-        padding-top: 20%;
-        padding-bottom: 18%;
+  .c-web__itemlayer {
+    padding-top: 20%;
+    padding-bottom: 18%;
+    @include sp {
+      padding-top: 18%;
     }
+  }
 
-    .c-web__image {
-        width: 38px;
-        margin-bottom: 20px;
+  .c-web__image {
+    width: 38px;
+    margin-bottom: 20px;
+    @include sp {
+      width: 19px;
+      margin-bottom: 8px;
     }
+  }
 
-    .c-web__title {
-        padding-bottom: 13px;
+  .c-web__title {
+    padding-bottom: 13px;
+    @include sp {
+      padding-bottom: 7px;
     }
+  }
 
-    .c-web__desc {
-        padding-top: 16px;
+  .c-web__desc {
+    padding-top: 16px;
+    @include sp {
+      padding-top: 8px;
     }
+  }
 }
 
 .c-web__tableitem {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
-
+//ANCHOR web__item
 .c-web__item {
-    background: #565f64;
-    margin-left: 3.7%;
-    width: calc(20% - 3.7%);
-    position: relative;
+  background: #565f64;
+  margin-left: 3.7%;
+  width: calc(20% - 3.7%);
+  position: relative;
+  @include tab {
+    width: calc(33.33% - 3.7%);
+  }
+  @include sp {
+    width: calc(50% - 32px);
+    margin-left: 32px;
+    margin-bottom: 24px;
+  }
 
-    &:not(:last-child)::before {
-        content: "";
-        width: 8px;
-        height: 16px;
-        position: absolute;
-        background-image: url(../assets/img/web/right-arrow.png);
-        background-size: 100% 100%;
+  &:not(:last-child)::before {
+    content: "";
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    background-image: url(../assets/img/web/right-arrow.png);
+    background-size: 100% 100%;
+    @include tab {
+      right: -8% !important;
+      top: 54% !important;
     }
+    @include sp {
+      width: 4px;
+      height: 8px;
+      right: -14% !important;
+      top: 47% !important;
+    }
+  }
 
-    &:first-child {
-        background: #231815;
-    }
+  &:first-child {
+    background: #231815;
+  }
 
-    &:last-child {
-        background: #7a89a8;
-    }
+  &:last-child {
+    background: #7a89a8;
+  }
 }
 
 .c-web__textweb {
-    text-transform: uppercase;
-    letter-spacing: -0.05em;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
 }
 
 .c-web__itemlayer {
-    // padding-top: 57px;
-    // padding-bottom: 54px;
+  // padding-top: 57px;
+  // padding-bottom: 54px;
 }
 
 .c-web__title {
-    font-size: 2.1rem;
-    text-align: center;
-    font-weight: 400;
-    position: relative;
-    letter-spacing: 0;
-    padding-bottom: 13px;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  letter-spacing: 0;
+  padding-bottom: 13px;
+  margin-left: -20px;
+  margin-right: -20px;
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-bottom: 1px solid;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid;
+    @include sp {
+      right: 10px;
+      width: calc(100% - 18px);
     }
+  }
+  @include sp {
+    font-size: 1rem;
+    padding-bottom: 7px;
+  }
 }
 
 .c-web__table {
-    margin-top: 121px;
+  margin-top: 121px;
 }
 
 .c-web__textjapan {
-    font-size: 4.6rem;
-    letter-spacing: 9px;
-    color: $blue;
-    letter-spacing: 0.25em;
-    font-family: "Noto Serif JP", serif;
+  font-size: 4.6rem;
+  letter-spacing: 9px;
+  color: $blue;
+  letter-spacing: 0.25em;
+  font-family: "Noto Serif JP", serif;
+  @include sp {
+    font-size: 2.3rem;
+  }
 }
 
 .c-web__desc {
-    font-size: 1.6rem;
-    margin-left: -5px;
-    margin-right: -5px;
-    padding-top: 18px;
-    letter-spacing: 0.15em;
-    text-align: center;
-    line-height: 1.25;
+  font-size: 1.6rem;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-top: 18px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: 0;
+  @include sp {
+    font-size: 0.8rem;
+    padding-top: 9px;
     letter-spacing: 0;
+    margin-left: -20px;
+    margin-right: -24px;
+  }
 }
 
 //ANCHOR table
 .c-web__table {
-    .l-container {
-        max-width: 1196px + 60px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin: 0 auto;
+  .l-container {
+    max-width: 1196px + 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    @include tab {
+      max-width: 600px;
     }
+  }
 
-    .c-web__tableheader {
-        background-color: #231815;
-        color: #fff;
-        padding: 0 30px;
-        padding-top: 64px;
-        padding-bottom: 50px;
-        margin-top: 23px;
-        text-align: center;
+  .c-web__tableheader {
+    background-color: #231815;
+    color: #fff;
+    padding: 0 30px;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    margin-top: 23px;
+    text-align: center;
+  }
+  .c-web__header {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .c-web__top {
+    color: $white;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 72px;
+    @include tab {
+      justify-content: flex-end;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
     }
+  }
 
-    .c-web__top {
-        color: $white;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 72px;
-    }
+  .c-web__tableheading {
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 4px;
+  }
 
-    .c-web__tableheading {
-        font-size: 3.2rem;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 1;
-        margin-top: 11px;
-    }
+  .c-web__bottom {
+    font-size: 2rem;
+    letter-spacing: 0;
+    text-align: right;
+    padding-right: 53px;
+    padding-top: 22px;
+    letter-spacing: 0.4px;
+  }
 
-    .c-web__bottom {
-        font-size: 2rem;
-        letter-spacing: 0;
-        text-align: right;
-        padding-right: 53px;
-        padding-top: 22px;
-        letter-spacing: 0.4px;
-    }
+  .c-web__tablemain {
+    display: flex;
+    padding: 40px;
+    border: 1px solid #231815;
+    flex-wrap: wrap;
+  }
 
-    .c-web__tablemain {
-        display: flex;
-        padding: 40px;
-        border: 1px solid #231815;
-        flex-wrap: wrap;
-    }
+  .c-web__tablelayer {
+    margin: 0 auto;
+  }
+
+  .c-web__itemwindow {
+    padding-top: 26px;
 
     .c-web__tablelayer {
-        margin: 0 auto;
-    }
-
-    .c-web__itemwindow {
-        padding-top: 26px;
-
-        .c-web__tablelayer {
-            width: 105px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 20px;
-        }
-    }
-
-    .c-web__itemface {
-        padding-top: 20px;
-
-        .c-web__tablelayer {
-            width: 97px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 25px;
-        }
-    }
-
-    .c-web__itemtwface {
-        padding-top: 16px;
-
-        .c-web__tablelayer {
-            width: 129px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 7px;
-        }
-    }
-
-    .c-web__itemcontact {
-        padding-top: 53px;
-
-        .c-web__tablelayer {
-            width: 153px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 28px;
-        }
-    }
-
-    .c-web__itemthermo {
-        padding-top: 10px;
-
-        .c-web__tablelayer {
-            width: 93px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 27px;
-        }
-    }
-
-    .c-web__itemstar {
-        padding-top: 19px;
-
-        .c-web__tablelayer {
-            width: 98px;
-        }
-    }
-
-    .c-web__itemsick {
-        .c-web__tablelayer {
-            width: 87px;
-            padding-top: 25px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 26px;
-        }
-    }
-
-    .c-web__itemwash {
-        padding-top: 25px;
-
-        .c-web__tablelayer {
-            width: 114px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 17px;
-        }
-    }
-
-    .c-web__itemmeet {
-        padding-top: 24px;
-
-        .c-web__tablelayer {
-            width: 124px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 17px;
-        }
-    }
-
-    .c-web__itemzoom {
-        padding-top: 20px;
-
-        .c-web__tablelayer {
-            width: 119px;
-        }
-
-        .c-web__tableinfotitle {
-            margin-top: 9px;
-        }
+      max-width: 105px;
     }
 
     .c-web__tableinfotitle {
-        text-align: center;
-        font-size: 1.5rem;
-        letter-spacing: -0.8px;
-        line-height: 1.5;
-        margin-top: 21px;
+      margin-top: 20px;
+    }
+  }
+
+  .c-web__itemface {
+    padding-top: 20px;
+
+    .c-web__tablelayer {
+      max-width: 97px;
     }
 
-    .c-web__tablebox {
-        width: 20%;
-        padding: 0 20px;
-        border-bottom: 1px solid #aeaeae;
+    .c-web__tableinfotitle {
+      margin-top: 25px;
+    }
+  }
+
+  .c-web__itemtwface {
+    padding-top: 16px;
+
+    .c-web__tablelayer {
+      max-width: 129px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 7px;
+    }
+  }
+
+  .c-web__itemcontact {
+    padding-top: 53px;
+
+    .c-web__tablelayer {
+      max-width: 153px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 28px;
+    }
+  }
+
+  .c-web__itemthermo {
+    padding-top: 10px;
+
+    .c-web__tablelayer {
+      max-width: 93px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 27px;
+    }
+  }
+
+  .c-web__itemstar {
+    padding-top: 19px;
+
+    .c-web__tablelayer {
+      max-width: 98px;
+    }
+  }
+
+  .c-web__itemsick {
+    .c-web__tablelayer {
+      max-width: 87px;
+      padding-top: 25px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 26px;
+    }
+  }
+
+  .c-web__itemwash {
+    padding-top: 25px;
+
+    .c-web__tablelayer {
+      max-width: 114px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 17px;
+    }
+  }
+
+  .c-web__itemmeet {
+    padding-top: 24px;
+
+    .c-web__tablelayer {
+      max-width: 124px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 17px;
+    }
+  }
+
+  .c-web__itemzoom {
+    padding-top: 20px;
+
+    .c-web__tablelayer {
+      max-width: 119px;
+    }
+
+    .c-web__tableinfotitle {
+      margin-top: 9px;
+    }
+  }
+
+  .c-web__tableinfotitle {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+    margin-top: 21px;
+  }
+
+  .c-web__tablebox {
+    width: 20%;
+    padding: 0 20px;
+    border-bottom: 1px solid #aeaeae;
+    border-left: 1px solid #aeaeae;
+    @include tab {
+      width: 50%;
+      border-bottom: 1px solid #aeaeae;
+      border-left: unset;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:nth-of-type(5n + 1) {
+      border-left: unset;
+    }
+
+    &:nth-of-type(n + 6) {
+      border-bottom: unset;
+      padding-bottom: 13px;
+    }
+
+    &:nth-child(1) {
+      @include tab {
+        order: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      @include tab {
+        order: 2;
         border-left: 1px solid #aeaeae;
-
-        &:nth-of-type(5n + 1) {
-            border-left: unset;
-        }
-
-        &:nth-of-type(n + 6) {
-            border-bottom: unset;
-            padding-bottom: 13px;
-        }
+      }
     }
 
-    .c-web__tableimg {
-        width: 100%;
+    &:nth-child(3) {
+      @include tab {
+        order: 5;
+      }
     }
 
-    .c-web__btntext {
-        font-size: 2.4rem;
-        font-weight: bold;
-        color: #231815;
-        background-color: #fff;
-        display: inline-block;
-        padding: 2px 27px;
-        line-height: 2;
-        border-radius: 25px;
-        margin-right: 42px;
-        letter-spacing: -0.03em;
+    &:nth-child(4) {
+      @include tab {
+        order: 5;
+        border-left: 1px solid #aeaeae;
+      }
     }
+
+    &:nth-child(5) {
+      @include tab {
+        order: 9;
+      }
+    }
+
+    &:nth-child(6) {
+      @include tab {
+        order: 3;
+      }
+    }
+
+    &:nth-child(7) {
+      @include tab {
+        order: 4;
+        border-left: 1px solid #aeaeae;
+      }
+    }
+
+    &:nth-child(8) {
+      @include tab {
+        order: 7;
+      }
+    }
+
+    &:nth-child(9) {
+      @include tab {
+        order: 8;
+        border-left: 1px solid #aeaeae;
+      }
+    }
+
+    &:nth-child(10) {
+      @include tab {
+        order: 10;
+        border-left: 1px solid #aeaeae;
+      }
+    }
+    @include tab {
+      &:nth-of-type(n + 6) {
+        border-bottom: 1px solid #aeaeae;
+      }
+    }
+  }
+
+  .c-web__tableimg {
+    width: 100%;
+  }
+  .c-web__btn {
+    margin-right: 42px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    @include tab {
+      margin-right: 0;
+    }
+  }
+  .c-web__btntext {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #231815;
+    background-color: #fff;
+    display: inline-block;
+    padding: 2px 27px;
+    line-height: 2;
+    border-radius: 25px;
+    letter-spacing: -0.03em;
+  }
 }

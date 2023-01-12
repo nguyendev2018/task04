@@ -9,7 +9,7 @@
     margin: 0 auto;
     margin-top: 164px;
     @include sp {
-        margin-top: 73px;
+        margin-top: 74px;
     }
 
     .c-recommend__main {
@@ -64,7 +64,7 @@
         @include tab {
             display: block;
             position: absolute;
-            bottom: -10px;
+            bottom: -41px;
             width: 216px;
             right: -4px;
             top: unset;
@@ -84,7 +84,7 @@
         }
         @include sp {
             font-size: 1.3rem;
-            letter-spacing: 1.8px;
+            letter-spacing: 2px;
             transform: translate(5px, 19px);
         }
     }
@@ -115,6 +115,7 @@
         @include sp {
             padding-left: 10px;
             padding-right: 10px;
+            padding-bottom: 107px;
         }
     }
 
@@ -130,7 +131,7 @@
         }
         @include sp {
             --mr: -15px;
-            padding-top: 42px;
+            padding-top: 41px;
         }
     }
 
@@ -160,38 +161,60 @@
     }
 
     .c-recommend__itemone {
-        padding-left: 12px;
-        padding-right: 8px;
+        @include sp {
+            padding-left: 12px;
+            padding-right: 8px;
+        }
+     
     }
 
     .c-recommend__itemtwo {
-        padding-left: 8px;
-        padding-right: 11px;
+        @include sp {
+            padding-left: 8px;
+            padding-right: 11px;
+        }
+     
 
         .c-recommend__itemtitle {
-            margin-top: 9px;
+            @include sp {
+                margin-top: 9px;
+            }
+          
         }
     }
 
     .c-recommend__itemthree {
-        padding-left: 12px;
-        padding-right: 8px;
-        padding-top: 8px;
+        
         @include sp {
-            margin-bottom: 40px;
+            padding-left: 12px;
+            padding-right: 8px;
+            padding-top: 8px;
         }
     }
 
     .c-recommend__itemfour {
-        padding-left: 7px;
-        padding-right: 12px;
-        padding-top: 8px;
+        @include sp {
+            padding-left: 7px;
+            padding-right: 12px;
+            padding-top: 8px;
+        }
+
+        .c-recommend__itemdesc {
+            @include sp {
+                padding-right: 4px;
+                line-break: anywhere;
+            }
+        }
+     
     }
 
     .c-recommend__itembox {
         width: 100%;
-        padding-bottom: 78.9%;
+        padding-bottom: 76.9%;
         position: relative;
+        @include sp {
+            padding-bottom: 78.8%;
+        }        
     }
 
     .c-recommend__itemimg {
@@ -205,7 +228,7 @@
     .c-recommend__itemtitle {
         font-size: 2.3rem;
         font-weight: normal;
-        margin-top: 26px;
+        margin-top: 23px;
         margin-bottom: 14px;
         letter-spacing: 0;
         margin-right: -5px;

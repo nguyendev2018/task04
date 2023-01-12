@@ -1,5 +1,8 @@
 .c-plan {
     margin-top: 122px;
+    @include sp {
+        margin-top: 49px;
+    }
 
     .l-container {
         max-width: 1256px;
@@ -17,6 +20,11 @@
         font-family: "Oswald", sans-serif;
         font-weight: 300;
         position: relative;
+        @include sp {
+            font-size: 2.4rem;
+            line-height: 1.5;
+            padding-bottom: 12px;
+        }
 
         &::after {
             position: absolute;
@@ -26,18 +34,36 @@
             background-color: #231815;
             bottom: 0;
             left: calc(50% - 30px);
+            @include sp {
+                width: 30px;
+                left: calc(50% - 15px);
+            }
+        }
+      
+    }
+
+    .c-plan__itemger {
+        @include sp {
+
         }
     }
 
     .c-plan__list {
         display: flex;
         margin-top: 74px;
+        @include sp {
+            margin-top: 20px;
+        }
 
         .l-container {
             max-width: 1256px+60px;
             margin: 0 auto;
             padding: 0 30px;
             display: flex;
+            @include sp {
+                padding-left: 10.85px;
+                padding-right: 0;
+            }
         }
     }
 
@@ -51,10 +77,19 @@
         margin-left: 2.6%;
         margin-top: 2px;
         position: relative;
+        @include sp {
+            margin-left: 0;
+        }
 
         .c-plan__cricle {
             bottom: -5%;
             left: 5.1%;
+            @include sp {
+                left: 5.5%;
+                bottom: -16.7%;
+                line-height: 2.8;
+                letter-spacing: 0;           
+            }
         }
     }
 
@@ -64,6 +99,10 @@
         .c-plan__cricle {
             bottom: -5%;
             left: 16.1%;
+            @include sp {
+                bottom: -19%;
+                left: 15.1%;
+            }
         }
     }
 
@@ -78,78 +117,158 @@
         height: 45px;
         text-align: center;
         line-height: 3;
+        @include sp {
+            width: 26px;
+            height: 26px;
+            font-size: 0.9rem;
+            line-height: 2.8;
+            letter-spacing: 0;
+        }
     }
 
     .c-plan__itemright {
         width: 47%;
         padding-left: 6.4%;
         margin-top: 0.6%;
+        @include sp {
+            margin-top: 1px;
+        }
     }
+
+  
 
     .c-plan__menulist {
         display: flex;
         justify-content: center;
         margin-bottom: 80px;
         margin-top: 47px;
+        margin-right: 14px;
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @include sp {
+            margin-top: 20px;
+            margin-right: 26px;
+            margin-bottom: 18px;
+        }
     }
 
-    .c-plan__itemnumber {
-        font-size: 2.2rem;
-        font-weight: 300;
-        letter-spacing: 0;
-        padding-left: 24px;
-    }
-
-    .c-plan__menuitem .c-plan__itemtext {
+  
+    .c-plan__menuitem {
+        padding-left: 40px;
         font-size: 2.2rem;
         font-weight: 300;
         font-feature-settings: "palt";
+        @include tab {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @include sp {
+            font-size: 1.1rem;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .c-plan__itemnumber {
         letter-spacing: 0;
-        padding-left: 15px;
+    }
+
+    .c-plan__itemtext {
+        letter-spacing: 0;
+        padding-right: 20px;
+        @include sp {
+            letter-spacing: 0.9px;
+            padding-right: 10px;
+        }
     }
 
     // ANCHOR table
     .c-plan__table {
         width: 100%;
         margin-top: 98px;
+        @include sp {
+            margin-top: 0;
+        }
 
         .l-container {
             max-width: 1196px + 60px;
             padding: 0 30px;
             margin: 0 auto;
+            @include sp {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
 
         .c-plan__tableleft {
             min-width: 275px;
             padding-left: 12px;
             letter-spacing: 0;
+            @include sp {
+                min-width: 123px;
+                letter-spacing: -1px;
+                padding-left: 5px;
+            }
         }
 
         .c-plan__menutwspacing {
             letter-spacing: 0.05em;
+            @include sp {
+                letter-spacing: -1px;
+            }
         }
 
         .c-plan__tableright {
             letter-spacing: 1.4px;
             padding-left: 15px;
+            @include sp {
+                letter-spacing: 0.5px;
+                padding-left: 0;
+            }
         }
 
         .c-plan__tableborder {
             padding-left: 4px;
+            @include sp {
+                padding-left: 0 !important;
+            }
         }
 
         .c-plan__tableitem {
             width: 100%;
             border-bottom: 1px solid #cbcbcb;
-            min-height: 78px;
+            min-height: 79px;
             font-weight: 300;
             font-feature-settings: "palt";
             padding-top: 29px;
             display: flex;
+            @include sp {
+                min-height: 40px;
+                padding-top: 14px;
+            }
+
+            &:last-child {
+                @include sp {
+                    padding-top: 18px;
+                    padding-bottom: 8px;
+                }
+            
+            }
         }
 
         .c-plan__tabletext {
             font-size: 2.5rem;
+            @include sp {
+                font-size: 1.3rem;
+                padding-left: 5px;
+                line-height: 1.5;
+            }
         }
 
         .c-plan__itemtext {
@@ -159,6 +278,19 @@
             letter-spacing: 0;
             text-align: left;
         }
+
+        .c-plan__tablesp {
+            @include sp {
+                padding-top: 6px;
+            }
+        }
+
+        .c-plan__tablesptext {
+            @include sp {
+                line-height: 3.5;
+            }
+          
+        }
         //ANCHOR menu table list
         .c-plan__menutwitem {
             font-size: 2rem;
@@ -166,16 +298,31 @@
             line-height: 1.6;
             display: inline-block;
             margin-right: 12px;
-            padding: 0 10px 4px;
+            padding: 4px 10px;
             border-radius: 3px;
             border: 1px solid #cbcbcb;
             font-feature-settings: "palt";
             margin-bottom: 10px;
+            @include sp {
+                padding: 4px 5px;
+                margin-right: 4px;
+                margin-bottom: 3px;
+            }
+        }
+
+        .c-plan__tablesp{
+            
         }
 
         .c-plan__menutwlink {
             font-size: 2rem;
             letter-spacing: 0;
+            display: block;
+            @include sp {
+                font-size: 0.9rem;
+                line-height: 1;
+                
+            }
         }
 
         .c-plan__spacing {
